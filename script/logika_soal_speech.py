@@ -2,6 +2,7 @@ import sys
 import subprocess as perintah
 
 kumpulan_soal = []
+kumpulan_jawaban = []
 
 while True:
     try:
@@ -28,11 +29,14 @@ while True:
 
         # Menyimpan Kumpulan Soal kedalam List/Array
         kumpulan_soal.append(soal.upper())
+        kumpulan_jawaban.append(jawab.upper())
 
         # Tampilkan List/Array
         print kumpulan_soal
+        print kumpulan_jawaban
         # Menghapus soal terkahir
         soal = ""
+        jawab = ""
 
     except KeyboardInterrupt:
         pilihan = raw_input("Apakah anda ingin menyimpan soal ? (Y/N) : ")
@@ -41,10 +45,14 @@ while True:
             # Menyimpan List Soal kedalam File
             nama_soal = raw_input("Masukkan Nama Soal Untuk Menyimpan : ")
             tipe_soal = raw_input("Jenis Soal : ")
-            simpan = open("{}_{}.txt".format(nama_soal, tipe_soal), 'w')
+            simpan_soal = open("Soal_{}_{}.txt".format(nama_soal, tipe_soal), 'w')
+            simpan_jawaban = open("Jawaban_{}_{}.txt".format(nama_soal, tipe_soal), 'w')
             for i in kumpulan_soal:
-                simpan.write(i + '\n')
-            simpan.close()
+                simpan_soal.write(i + '\n')
+            for i in kumpulan_jawaban:
+                simpan_jawaban.write(i + '\n')
+            simpan_soal.close()
+            simpan_jawaban.close()
             perintah.call('google_speech -l id "Terimakasih,Soal sudah tersimpan!"', shell=True)
         else:
             print "\nAnda memilih keluar , Tanpa menyimpan soal !"
