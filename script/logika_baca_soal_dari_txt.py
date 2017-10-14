@@ -4,12 +4,19 @@ arraysoal = []
 arrayjawaban = []
 
 def main():
+    bacaan_sapaan = open("Sapaan_Umum.txt", "r")
     bacaan_soal = open("Soal_IPA_IPA.txt", "r")
     bacaan_jawaban = open("Jawaban_IPA_IPA.txt", "r")
+    parsing_sapaan = bacaan_sapaan.readlines()
     parsing_soal = bacaan_soal.readlines()
     parsing_jawaban = bacaan_jawaban.readlines()
     bacaan_soal.close()
     bacaan_jawaban.close()
+
+    for s in parsing_sapaan:
+        kalimat_sapaan = ('"{}"'.format(s))
+        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan
+        perintah.call(isi_sapaan, shell=True)
 
     i = 0
     for line in parsing_soal:
