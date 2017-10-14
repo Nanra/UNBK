@@ -4,6 +4,8 @@ import subprocess as perintah
 kumpulan_soal = []
 kumpulan_jawaban = []
 
+perintah.call('google_speech -l id "Ini adalah menu pembuatan soal , silahkan isikan soal beserta jawaban dengan baik dan benar !"', shell=True)
+
 while True:
     try:
         soal = raw_input("Tuliskan Kalimat Soal : ")
