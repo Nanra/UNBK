@@ -40,6 +40,8 @@ def main():
         print i, isi_jawaban
         perintah.call(isi_jawaban, shell=True)
         i += 1
+    else:
+        sys.exit()
 
 
 main()
