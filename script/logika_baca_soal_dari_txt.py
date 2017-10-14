@@ -29,13 +29,13 @@ def main():
 
     while i < len(parsing_soal):
         print arraysoal
-        kalimat_soal = ('"Soal Nomor {} . {}"'.format(i + 1, arraysoal[i]))
+        kalimat_soal = ('"Soal Nomor {} ...., {}"'.format(i + 1, arraysoal[i]))
         isi_soal = 'google_speech -l id ' + kalimat_soal + ' -e speed 1 '
         print i, isi_soal
         perintah.call(isi_soal, shell=True)
 
         print arrayjawaban
-        kalimat_jawab = ('"{}"'.format(arrayjawaban[i]))
+        kalimat_jawab = ('" Pilihannya adalah ......, {}"'.format(arrayjawaban[i]))
         isi_jawaban = 'google_speech -l id ' + kalimat_jawab + ' -e speed 1 '
         print i, isi_jawaban
         perintah.call(isi_jawaban, shell=True)
