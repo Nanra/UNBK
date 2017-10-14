@@ -1,3 +1,4 @@
+import sys
 import subprocess as perintah
 
 arraysoal = []
@@ -5,10 +6,10 @@ arrayjawaban = []
 
 
 def main():
-    bacaan_sapaan = open("Sapaan_Umum.txt", "r")
+    # bacaan_sapaan = open("Sapaan_Umum.txt", "r")
     bacaan_soal = open("Soal_Dasar_Bahasa Indonesia.txt", "r")
     bacaan_jawaban = open("Jawaban_Dasar_Bahasa Indonesia.txt", "r")
-    parsing_sapaan = bacaan_sapaan.readlines()
+    # parsing_sapaan = bacaan_sapaan.readlines()
     parsing_soal = bacaan_soal.readlines()
     parsing_jawaban = bacaan_jawaban.readlines()
     bacaan_soal.close()
@@ -41,7 +42,7 @@ def main():
         perintah.call(isi_jawaban, shell=True)
         i += 1
     else:
-        sys.exit()
+        return sys.exit()
 
 
 main()
