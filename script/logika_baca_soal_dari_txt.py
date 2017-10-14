@@ -1,6 +1,5 @@
 import subprocess as perintah
 
-
 arraysoal = []
 arrayjawaban = []
 
@@ -13,7 +12,6 @@ def main():
     bacaan_jawaban.close()
 
     i = 0
-
     for line in parsing_soal:
         print (line)
         arraysoal.append(line)
@@ -23,7 +21,7 @@ def main():
 
     while i < len(parsing_soal):
         print arraysoal
-        kalimat_soal = ('"Soal Nomor {} {}"'.format(i+1,arraysoal[i]))
+        kalimat_soal = ('"Soal Nomor {} . {}"'.format(i+1,arraysoal[i]))
         isi_soal = 'google_speech -l id ' + kalimat_soal
         print i, isi_soal
         perintah.call(isi_soal, shell=True)
