@@ -17,7 +17,7 @@ def main():
 
     for s in parsing_sapaan:
         kalimat_sapaan = ('"{}"'.format(s))
-        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.85 '
+        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.86 '
         perintah.call(isi_sapaan, shell=True)
 
     i = 0
