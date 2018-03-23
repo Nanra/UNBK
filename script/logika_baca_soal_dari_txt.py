@@ -7,8 +7,8 @@ arrayjawaban = []
 
 def main():
     bacaan_sapaan = open("Sapaan_Umum.txt", "r")
-    bacaan_soal = open("Soal_Dasar_Bahasa Indonesia.txt", "r")
-    bacaan_jawaban = open("Jawaban_Dasar_Bahasa Indonesia.txt", "r")
+    bacaan_soal = open("Soal_Pengetahuan_Sosial_IPS.txt", "r")
+    bacaan_jawaban = open("Jawaban_Pengetahuan_Sosial_IPS.txt", "r")
     parsing_sapaan = bacaan_sapaan.readlines()
     parsing_soal = bacaan_soal.readlines()
     parsing_jawaban = bacaan_jawaban.readlines()
@@ -17,7 +17,7 @@ def main():
 
     for s in parsing_sapaan:
         kalimat_sapaan = ('"{}"'.format(s))
-        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.86 '
+        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 5 '
         perintah.call(isi_sapaan, shell=True)
 
     i = 0
