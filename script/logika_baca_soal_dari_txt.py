@@ -44,5 +44,5 @@ def main():
     else:
         return sys.exit()
 
-
-main()
+if __nama__=="__main__":
+    main()
