@@ -17,7 +17,7 @@ def main():
 
     for s in parsing_sapaan:
         kalimat_sapaan = ('"{}"'.format(s))
-        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 5 '
+        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.9 '
         perintah.call(isi_sapaan, shell=True)
 
     i = 0
@@ -44,5 +44,5 @@ def main():
     else:
         return sys.exit()
 
-if __nama__=="__main__":
+if __name__=="__main__":
     main()
