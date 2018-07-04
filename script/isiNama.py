@@ -9,6 +9,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
 pressed = "0"
+nama = ""
 isivalid = ""
 antrian = []
 pinbtnValid = 31
@@ -44,13 +45,13 @@ while i < len(pinbtn):
 # cmd.call('google_speech -l id "Status Semua PIN OK !"', shell=True)
 print "All Pin OK\n"
 ##print "Test Pembacaan Huruf\n"
-cmd.call('google_speech -l id "Untuk Mengisi Nama, Mohon Perhatikan langkah-langkah berikut!"', shell=True)
-cmd.call('google_speech -l id "Pertama. Masukkan Kode Huruf Terlebih Dahulu"', shell=True)
-cmd.call('google_speech -l id "Kedua. Tekan Tombol Validasi Untuk Memilih Huruf"', shell=True)
-cmd.call('google_speech -l id "Ketiga. Tekan Tombol Enter Untuk Menyimpan Huruf Yang Dipilih"', shell=True)
-cmd.call('google_speech -l id "Jika kode huruf tidak sesuai, silahkan teekan tombol hapus"', shell=True)
-cmd.call('google_speech -l id "Kemudian Jika Nama sudah sesuai, silahkan tekan tombol Next untuk lanjut ke tahap pengisian nomor ujian"', shell=True)
-cmd.call('google_speech -l id "Sekarang silahkan masukkan kode huruf"', shell=True)
+##cmd.call('google_speech -l id "Untuk Mengisi Nama, Mohon Perhatikan langkah-langkah berikut!"', shell=True)
+##cmd.call('google_speech -l id "Pertama. Masukkan Kode Huruf Terlebih Dahulu"', shell=True)
+##cmd.call('google_speech -l id "Kedua. Tekan Tombol Validasi Untuk Memilih Huruf"', shell=True)
+##cmd.call('google_speech -l id "Ketiga. Tekan Tombol Enter Untuk Menyimpan Huruf Yang Dipilih"', shell=True)
+##cmd.call('google_speech -l id "Jika kode huruf tidak sesuai, silahkan teekan tombol hapus"', shell=True)
+##cmd.call('google_speech -l id "Kemudian Jika Nama sudah sesuai, silahkan tekan tombol Next untuk lanjut ke tahap pengisian nomor ujian"', shell=True)
+##cmd.call('google_speech -l id "Sekarang silahkan masukkan kode huruf"', shell=True)
 print "Masukkan Huruf\n"
 
 
@@ -185,8 +186,8 @@ while True:
 
 
     if tombolNext is pressed:
-        kalimat = ''.join(antrian)
-        kalimat = '"Nama Anda Adalah : "' + kalimat
+        nama = ''.join(antrian)
+        kalimat = '"Nama Anda Adalah : "' + nama
         suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call('google_speech -l id "Pilih tombol validasi jika benar"', shell=True)
@@ -221,3 +222,4 @@ while True:
                 cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
     time.sleep(0.3)
+print ("Nama adalah : {}".format(nama))
