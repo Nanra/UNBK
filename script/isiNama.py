@@ -207,7 +207,7 @@ while True:
         suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call(validKonfirm, shell=True)
-        time.sleep(2)
+        time.sleep(2)  # Witing for Input
         # Konfirmasi Nama ( Baru sampai disini besok lanjut lagi)
         tombolValidasi2 = str(GPIO.input(pinbtnValid))
         print tombolValidasi2
