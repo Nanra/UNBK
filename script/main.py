@@ -15,23 +15,23 @@ kalNama = "omxplayer -o local Petunjuk/sapaan/sapaanNama.mp3"
 kalNomor = "omxplayer -o local Petunjuk/sapaan/sapaanNomor.mp3"
 kalNomor2 = "omxplayer -o local Petunjuk/sapaan/sapaanNomor2.mp3"
 
-### Greetings Sessions
-##print ("Greetings Session")
-##for baca in arraySapaan:
-##    perintah.call(baca, shell=True)
-##
-### Sesi Pengisian Identitas Peserta Ujian
-##print ("Sesi Pengisian Identitas Ujian")
-##perintah.call(kalID, shell=True)
-##perintah.call(kalID2, shell=True)
-##
-### Sesi Pengisian Nama
-##print ("Sesi Pengisian Nama")
-##perintah.call(kalNama, shell=True)
-##perintah.call("python isiNama.py", shell=True) # Opening Module isiNama.py
+# Greetings Sessions
+print ("Greetings Session")
+for baca in arraySapaan:
+    perintah.call(baca, shell=True)
+
+# Sesi Pengisian Identitas Peserta Ujian
+print ("Sesi Pengisian Identitas Ujian")
+perintah.call(kalID, shell=True)
+perintah.call(kalID2, shell=True)
+
+# Sesi Pengisian Nama
+print ("Sesi Pengisian Nama")
+perintah.call(kalNama, shell=True)
+perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
 
 # Pengisian Nama
 print ("Sesi Pengisian Nomor Ujian")
 perintah.call(kalNomor, shell=True)
 perintah.call(kalNomor2, shell=True)
-#perintah.call("python isiNama.py", shell=True)
+# perintah.call("python isiNama.py", shell=True)
