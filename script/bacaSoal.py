@@ -1,19 +1,19 @@
 import sys
 import subprocess as perintah
 
-arraysoal = []
-arrayjawaban = []
+arraySoal = []
+arrayPilihan = []
 
 
 def main():
     # bacaan_sapaan = open("Sapaan_Umum.txt", "r")
-    bacaan_soal = open("Soal_Dasar_Bahasa Indonesia.txt", "r")
-    bacaan_jawaban = open("Jawaban_Dasar_Bahasa Indonesia.txt", "r")
+    bacaanSoal = open("Soal_Dasar_Bahasa Indonesia.txt", "r")
+    bacaanPilihan = open("Jawaban_Dasar_Bahasa Indonesia.txt", "r")
     # parsing_sapaan = bacaan_sapaan.readlines()
-    parsing_soal = bacaan_soal.readlines()
-    parsing_jawaban = bacaan_jawaban.readlines()
-    bacaan_soal.close()
-    bacaan_jawaban.close()
+    parsingSoal = bacaanSoal.readlines()
+    parsingPilihan = bacaanPilihan.readlines()
+    bacaanSoal.close()
+    bacaanPilihan.close()
 
     # for s in parsing_sapaan:
     #    kalimat_sapaan = ('"{}"'.format(s))
@@ -21,25 +21,25 @@ def main():
     #    perintah.call(isi_sapaan, shell=True)
 
     i = 0
-    for line in parsing_soal:
-        print (line)
-        arraysoal.append(line)
-    for lines in parsing_jawaban:
-        print (lines)
-        arrayjawaban.append(lines)
+    for soal in parsingSoal:
+        print (soal)
+        arraySoal.append(soal)
+    for pilihan in parsingPilihan:
+        print (pilihan)
+        arrayPilihan.append(pilihan)
 
-    while i < len(parsing_soal):
-        print arraysoal
-        kalimat_soal = ('"Soal Nomor {} ...., {}"'.format(i + 1, arraysoal[i]))
-        isi_soal = 'google_speech -l id ' + kalimat_soal + ' -e speed 1 '
-        print i, isi_soal
-        perintah.call(isi_soal, shell=True)
+    while i < len(parsingSoal):
+        print arraySoal
+        kalimatSoal = ('"Soal Nomor {} ...., {}"'.format(i + 1, arraySoal[i]))
+        isiSoal = 'google_speech -l id ' + kalimatSoal + ' -e speed 1 '
+        print i, isiSoal
+        perintah.call(isiSoal, shell=True)
 
-        print arrayjawaban
-        kalimat_jawab = ('" Pilihannya adalah ......, {}"'.format(arrayjawaban[i]))
-        isi_jawaban = 'google_speech -l id ' + kalimat_jawab + ' -e speed 0.9 '
-        print i, isi_jawaban
-        perintah.call(isi_jawaban, shell=True)
+        print arrayPilihan
+        kalimatPilihan = ('" Pilihannya adalah ......, {}"'.format(arrayPilihan[i]))
+        isiPilihan = 'google_speech -l id ' + kalimatPilihan + ' -e speed 0.9 '
+        print i, isiPilihan
+        perintah.call(isiPilihan, shell=True)
         i += 1
     else:
         return sys.exit()
