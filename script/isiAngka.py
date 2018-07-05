@@ -150,6 +150,27 @@ while True:
             suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Ujian tersebut benar ?"'
             cmd.call(suaraKalimat, shell=True)
             cmd.call(validKonfirm, shell=True)
+            time.sleep(3)  # Waiting for input
+            tombolValidasi2 = str(GPIO.input(pinbtnValid))
+            print tombolValidasi2
+            if tombolValidasi2 is pressed:
+                print "Y"
+                cmd.call(validPressed, shell=True)
+                break
+            else:
+                continue
 
+        if tombolDelete is pressed:
+            if len(antrian) is 0:
+                print "Antrian masih Kosong"
+                cmd.call(suaraError, shell=True)
+                continue
+            else:
+                cmd.call(suaraHapus2, shell=True)
+                antrian.pop()
+                print (antrian)
+                if len(antrian) is 0:
+                    cmd.call('google_speech -l id "Antrian telah kosong. Sekarang silahkan masukkan huruf kembali !')
 
     time.sleep(0.3)
+print("Nomor Ujian : {}".format(nomorUjian))
