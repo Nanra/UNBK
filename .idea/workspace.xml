@@ -25,7 +25,7 @@
           <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiNama.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-159">
+                <state relative-caret-position="-471">
                   <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
                   <folding>
                     <element signature="e#103#126#0" expanded="true" />
@@ -41,8 +41,8 @@
           <file leaf-file-name="isiAngka.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+                <state relative-caret-position="384">
+                  <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
                   <folding>
                     <element signature="e#68#91#0" expanded="true" />
                   </folding>
@@ -432,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530805881640</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update Isi Angka">
+      <created>1530809556656</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809556656</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update Isi Angka">
+      <created>1530809675031</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809675031</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -497,7 +511,8 @@
     <MESSAGE value="Update Main App" />
     <MESSAGE value="Update Isi Nama" />
     <MESSAGE value="Update PEP8 Isi Nama" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update PEP8 Isi Nama" />
+    <MESSAGE value="Update Isi Angka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Isi Angka" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt">
@@ -842,7 +857,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
+        <state relative-caret-position="-471">
           <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
           <folding>
             <element signature="e#103#126#0" expanded="true" />
@@ -852,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="146" column="33" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+        <state relative-caret-position="384">
+          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
           <folding>
             <element signature="e#68#91#0" expanded="true" />
           </folding>

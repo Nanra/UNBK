@@ -147,6 +147,8 @@ while True:
         if tombolNext is pressed:
             nomorUjian = ''.join(antrian)
             kalimat = '"Nomor ujian Anda adalah : "' + nomorUjian
+            suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Ujian tersebut benar ?"'
+            cmd.call(suaraKalimat, shell=True)
 
 
     time.sleep(0.3)
