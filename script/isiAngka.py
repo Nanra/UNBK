@@ -149,6 +149,7 @@ while True:
             kalimat = '"Nomor ujian Anda adalah : "' + nomorUjian
             suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Ujian tersebut benar ?"'
             cmd.call(suaraKalimat, shell=True)
+            cmd.call(validKonfirm, shell=True)
 
 
     time.sleep(0.3)
