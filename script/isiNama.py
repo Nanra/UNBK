@@ -34,6 +34,7 @@ suaraError = "omxplayer -o local notif/Error.ogg"
 suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
 suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 belum = "omxplayer -o local notif/belum.ogg"
+belumIsiNama = "omxplayer -o local Petunjuk/belumIsiNama.mp3"
 tandaStrip = 'google_speech -l id "Tanda Strip"'
 sesiNama = "omxplayer -o local Petunjuk/sesiNama/sesiNama.mp3"
 sesiNama2 = "omxplayer -o local Petunjuk/sesiNama/sesiNama2.mp3"
@@ -43,6 +44,8 @@ sesiNama5 = "omxplayer -o local Petunjuk/sesiNama/sesiNama5.mp3"
 sesiNama6 = "omxplayer -o local Petunjuk/sesiNama/sesiNama6.mp3"
 sesiNama7 = "omxplayer -o local Petunjuk/sesiNama/sesiNama7.mp3"
 sesiNama8 = "omxplayer -o local Petunjuk/sesiNama/sesiNama8.mp3"
+validKonfirm = "omxplayer -o local Petunjuk/validKonfirm.mp3"
+validPressed = "omxplayer -o local Petunjuk/validPressed.mp3"
 sapaNama = [sesiNama, sesiNama2,
             sesiNama3, sesiNama4,
             sesiNama5, sesiNama6,
@@ -63,6 +66,7 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 # print "Test Pembacaan Huruf\n"
 
+# Play Greetings
 for baca in sapaNama:
     cmd.call(baca, shell=True)
 print "Masukkan Huruf\n"
@@ -194,7 +198,7 @@ while True:
     if (tombolNext is pressed) & (len(antrian) == 0):
         print "Anda tidak bisa lanjutkan, Antrian masih kosong"
         cmd.call(suaraError, shell=True)
-        cmd.call('google_speech -l id "Anda belum mengisikan nama!,,.. Isi nama terlebih dahulu !"', shell=True)
+        cmd.call(belumIsiNama, shell=True)
         continue
 
     if tombolNext is pressed:
@@ -202,14 +206,14 @@ while True:
         kalimat = '"Nama Anda Adalah : "' + nama
         suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
         cmd.call(suaraKalimat, shell=True)
-        cmd.call('google_speech -l id "Pilih tombol validasi jika benar"', shell=True)
+        cmd.call(validKonfirm, shell=True)
         time.sleep(2)
         # Konfirmasi Nama ( Baru sampai disini besok lanjut lagi)
         tombolValidasi2 = str(GPIO.input(pinbtnValid))
         print tombolValidasi2
         if tombolValidasi2 is pressed:
             print "Y"
-            cmd.call('google_speech -l id "Anda menekan tombol validasi"', shell=True)
+            cmd.call(validPressed, shell=True)
             break
         else:
             continue
