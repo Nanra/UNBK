@@ -1,45 +1,38 @@
 # Main Aplikasi Keseluruhan Untuk Proses Ujian
 
-
 import sys
 import subprocess as perintah
 
-sapa1 = "omxplayer -o local notif/selamatDatang.ogg"
-sapa2 = "omxplayer -o local notif/selamatDatang2.ogg"
-sapa3 = "omxplayer -o local notif/selamatDatang3.ogg"
-sapa4 = "omxplayer -o local notif/selamatDatang4.ogg"
-sapa5 = "omxplayer -o local notif/selamatDatang5.ogg"
-# Sesi Pembacaan Greetings
+# Source Sound
+sapa1 = "omxplayer -o local Petunjuk/sapaan/sapaan.mp3"
+sapa2 = "omxplayer -o local Petunjuk/sapaan/sapaan2.mp3"
+sapa3 = "omxplayer -o local Petunjuk/sapaan/sapaan3.mp3"
+sapa4 = "omxplayer -o local Petunjuk/sapaan/sapaan4.mp3"
+sapa5 = "omxplayer -o local Petunjuk/sapaan/sapaan5.mp3"
+arraySapaan = [sapa1, sapa2, sapa3, sapa4, sapa5]
+kalID = "omxplayer -o local Petunjuk/sapaan/sapaanIdentitas.mp3"
+kalID2 = "omxplayer -o local Petunjuk/sapaan/sapaanIdentitas2.mp3"
+kalNama = "omxplayer -o local Petunjuk/sapaan/sapaanNama.mp3"
+kalNomor = "omxplayer -o local Petunjuk/sapaan/sapaanNomor.mp3"
+kalNomor2 = "omxplayer -o local Petunjuk/sapaan/sapaanNomor2.mp3"
 
-perintah.call(sapa1, shell=True)
-perintah.call(sapa2, shell=True)
-perintah.call(sapa3, shell=True)
-perintah.call(sapa4, shell=True)
-perintah.call(sapa5, shell=True)
-
-##print ("Sesi Greetings")
-##bacaan_sapaan = open("SapaanUtama.txt", "r")
-##parsing_sapaan = bacaan_sapaan.readlines()
-##for s in parsing_sapaan:
-##        kalimat_sapaan = ('"{}"'.format(s))
-##        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
-##        perintah.call(isi_sapaan, shell=True)
-
-# Sesi Pengisian Identitas Peserta Ujian
-print ("Sesi Pengisian Identitas Ujian")
-kalID = '"Anda memasuki sesi pengisian identitas peserta ujian."'
-kalID2 = '"Mohon isikan dengan baik dan benar identitas diri anda !"'
-perintah.call('google_speech -l id ' + kalID + ' -e speed 1 ', shell=True)
-perintah.call('google_speech -l id ' + kalID2 + ' -e speed 1 ', shell=True)
-
-# Pengisian Nama
-print ("Sesi Pengisian Nama")
-kalNama = '"Sekarang silahkan isikan nama lengkap Anda !"'
-perintah.call('google_speech -l id ' + kalNama + ' -e speed 1 ', shell=True)
-perintah.call("python isiNama.py", shell=True) # Opening Module isiNama.py
+### Greetings Sessions
+##print ("Greetings Session")
+##for baca in arraySapaan:
+##    perintah.call(baca, shell=True)
+##
+### Sesi Pengisian Identitas Peserta Ujian
+##print ("Sesi Pengisian Identitas Ujian")
+##perintah.call(kalID, shell=True)
+##perintah.call(kalID2, shell=True)
+##
+### Sesi Pengisian Nama
+##print ("Sesi Pengisian Nama")
+##perintah.call(kalNama, shell=True)
+##perintah.call("python isiNama.py", shell=True) # Opening Module isiNama.py
 
 # Pengisian Nama
 print ("Sesi Pengisian Nomor Ujian")
-kalNama = '"Sekarang silahkan isikan nomor ujian Anda !"'
-perintah.call('google_speech -l id ' + kalNama + ' -e speed 1 ', shell=True)
+perintah.call(kalNomor, shell=True)
+perintah.call(kalNomor2, shell=True)
 #perintah.call("python isiNama.py", shell=True)

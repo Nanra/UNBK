@@ -29,6 +29,7 @@ suaraError = "omxplayer -o local notif/Error.ogg"
 suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
 suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 belum = "omxplayer -o local notif/belum.ogg"
+
 tandaStrip = "google_speech -l id '....Tanda Strip'"
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
