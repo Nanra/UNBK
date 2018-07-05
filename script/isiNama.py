@@ -23,14 +23,16 @@ pinbtnTiga = 40
 pinbtnEmpat = 37
 pinbtnLima = 35
 pinbtnEnam = 33
+
+# Sound Source
 suara = 'google_speech -l id '
 suaraEnter = "omxplayer -o local notif/Enter.ogg"
 suaraError = "omxplayer -o local notif/Error.ogg"
 suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
 suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 belum = "omxplayer -o local notif/belum.ogg"
-
-tandaStrip = "google_speech -l id '....Tanda Strip'"
+tandaStrip = 'google_speech -l id "Tanda Strip"'
+sesiNama = "omxplayer -o local Petunjuk/sesiNama/sesiNama.mp3"
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
           pinbtnEnter, pinbtnSatu,
@@ -46,7 +48,7 @@ while i < len(pinbtn):
 # cmd.call('google_speech -l id "Status Semua PIN OK !"', shell=True)
 print "All Pin OK\n"
 ##print "Test Pembacaan Huruf\n"
-##cmd.call('google_speech -l id "Untuk Mengisi Nama, Mohon Perhatikan langkah-langkah berikut!"', shell=True)
+cmd.call(sesiNama, shell=True)
 ##cmd.call('google_speech -l id "Pertama. Masukkan Kode Huruf Terlebih Dahulu"', shell=True)
 ##cmd.call('google_speech -l id "Kedua. Tekan Tombol Validasi Untuk Memilih Huruf"', shell=True)
 ##cmd.call('google_speech -l id "Ketiga. Tekan Tombol Enter Untuk Menyimpan Huruf Yang Dipilih"', shell=True)
