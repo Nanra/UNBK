@@ -145,5 +145,8 @@ while True:
             continue
 
         if tombolNext is pressed:
+            nomorUjian = ''.join(antrian)
+            kalimat = '"Nomor ujian Anda adalah : "' + nomorUjian
+
 
     time.sleep(0.3)
