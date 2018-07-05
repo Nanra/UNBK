@@ -1,6 +1,5 @@
 # Main Aplikasi Keseluruhan Untuk Proses Ujian
 
-import sys
 import subprocess as perintah
 
 # Source Sound
