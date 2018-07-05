@@ -40,8 +40,9 @@ sesiNama5 = "omxplayer -o local Petunjuk/sesiNama/sesiNama5.mp3"
 sesiNama6 = "omxplayer -o local Petunjuk/sesiNama/sesiNama6.mp3"
 sesiNama7 = "omxplayer -o local Petunjuk/sesiNama/sesiNama7.mp3"
 sesiNama8 = "omxplayer -o local Petunjuk/sesiNama/sesiNama8.mp3"
-sapaNama = [sesiNama, sesiNama2, sesiNama3,
-            sesiNama4, sesiNama5, sesiNama6,
+sapaNama = [sesiNama, sesiNama2,
+            sesiNama3, sesiNama4,
+            sesiNama5, sesiNama6,
             sesiNama7, sesiNama8]
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
