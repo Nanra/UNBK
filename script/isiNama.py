@@ -33,6 +33,16 @@ suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 belum = "omxplayer -o local notif/belum.ogg"
 tandaStrip = 'google_speech -l id "Tanda Strip"'
 sesiNama = "omxplayer -o local Petunjuk/sesiNama/sesiNama.mp3"
+sesiNama2 = "omxplayer -o local Petunjuk/sesiNama/sesiNama2.mp3"
+sesiNama3 = "omxplayer -o local Petunjuk/sesiNama/sesiNama3.mp3"
+sesiNama4 = "omxplayer -o local Petunjuk/sesiNama/sesiNama4.mp3"
+sesiNama5 = "omxplayer -o local Petunjuk/sesiNama/sesiNama5.mp3"
+sesiNama6 = "omxplayer -o local Petunjuk/sesiNama/sesiNama6.mp3"
+sesiNama7 = "omxplayer -o local Petunjuk/sesiNama/sesiNama7.mp3"
+sesiNama8 = "omxplayer -o local Petunjuk/sesiNama/sesiNama8.mp3"
+sapaNama = [sesiNama, sesiNama2, sesiNama3,
+            sesiNama4, sesiNama5, sesiNama6,
+            sesiNama7, sesiNama8]
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
           pinbtnEnter, pinbtnSatu,
@@ -48,13 +58,9 @@ while i < len(pinbtn):
 # cmd.call('google_speech -l id "Status Semua PIN OK !"', shell=True)
 print "All Pin OK\n"
 ##print "Test Pembacaan Huruf\n"
-cmd.call(sesiNama, shell=True)
-##cmd.call('google_speech -l id "Pertama. Masukkan Kode Huruf Terlebih Dahulu"', shell=True)
-##cmd.call('google_speech -l id "Kedua. Tekan Tombol Validasi Untuk Memilih Huruf"', shell=True)
-##cmd.call('google_speech -l id "Ketiga. Tekan Tombol Enter Untuk Menyimpan Huruf Yang Dipilih"', shell=True)
-##cmd.call('google_speech -l id "Jika kode huruf tidak sesuai, silahkan teekan tombol hapus"', shell=True)
-##cmd.call('google_speech -l id "Kemudian Jika Nama sudah sesuai, silahkan tekan tombol Next untuk lanjut ke tahap pengisian nomor ujian"', shell=True)
-##cmd.call('google_speech -l id "Sekarang silahkan masukkan kode huruf"', shell=True)
+
+for baca in sapaNama:
+    cmd.call(baca, shell=True)
 print "Masukkan Huruf\n"
 
 
