@@ -3,11 +3,16 @@
 # Section for reading braille convert to number
 import RPi.GPIO as GPIO
 import time
+import subprocess as cmd
 
+pressed = "0"
+nomorUjian = ""
+isiValid = ""
+antrian = []
 pinbtnValid = 31
-pinbtnNext = 29
-pinbtnPrev = 32
-pinbtnDelete = 5
+pinbtnNext = 5
+pinbtnPrev = 29
+pinbtnDelete = 32
 pinbtnEnter = 3
 pinbtnSatu = 36
 pinbtnDua = 38
@@ -15,6 +20,13 @@ pinbtnTiga = 40
 pinbtnEmpat = 37
 pinbtnLima = 35
 pinbtnEnam = 33
+
+# Soure Sounds
+suara = 'google_speech -l id'
+suaraEnter = "omxplayer -o local notif/Enter.ogg"
+suaraError = "omxplayer -o local notif/Error.ogg"
+suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
+suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
           pinbtnEnter, pinbtnSatu,
@@ -98,9 +110,40 @@ def bacaAngka():
 
 
 while True:
+    tombolValidasi = str(GPIO.input(pinbtnValid))
+    tombolEnter = str(GPIO.input(pinbtnEnter))
+    tombolNext = str(GPIO.input(pinbtnNext))
+    tombolPrev = str(GPIO.input(pinbtnPrev))
+    tombolDelete = str(GPIO.input(pinbtnDelete))
     isiangka = bacaAngka()  # Baca Angka
     if isiangka == "SALAH":
         bacaAngka()
     else:
+        if tombolValidasi is pressed:  # Validation Button
+            isiValid = bacaAngka()
+            suaraAngka = suara + str(isiValid)
+            cmd.call(suaraAngka, shell=True)
         print isiangka,
+
+        if (tombolEnter is pressed) & (isiValid is ""):  # Is Arr Empty
+            print("Anda Belum Mengisi Angka")
+            cmd.call(suaraError, shell=True)
+            cmd.call(belum, shell=True)
+            continue
+
+        if tombolEnter is pressed:  # Saving Num to Arr
+            print("Angka telah disimpan ke antrian")
+            antrian.append(isiValid)
+            cmd.call(suaraEnter, shell=True)
+            print("Antrian = ", antrian)
+            isiValid = ""
+
+        if (tombolNext is pressed) & (len(antrian == 0)):
+            print ("Anda tidak bisa melanjutkan, Antrian masih kosong")
+            cmd.call(suaraError, shell=True)
+            cmd.call(belumIsiNim, shell=True)
+            continue
+
+        if tombolNext is pressed:
+
     time.sleep(0.3)
