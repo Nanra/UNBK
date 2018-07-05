@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/isiAngka.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/isiAngka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/isiNama.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/isiNama.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +25,8 @@
           <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiNama.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-471">
-                  <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+                <state relative-caret-position="19">
+                  <caret line="209" column="41" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
                   <folding>
                     <element signature="e#103#126#0" expanded="true" />
                   </folding>
@@ -41,8 +41,8 @@
           <file leaf-file-name="isiAngka.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+                <state relative-caret-position="19">
+                  <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
                   <folding>
                     <element signature="e#68#91#0" expanded="true" />
                   </folding>
@@ -446,7 +446,28 @@
       <option name="project" value="LOCAL" />
       <updated>1530809675031</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update Isi Angka">
+      <created>1530809789713</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809789713</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update Isi Angka">
+      <created>1530809908081</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1530809908081</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update Isi Angka">
+      <created>1530813037977</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530813037977</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -855,22 +876,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/isiNama.py">
+    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-471">
-          <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+        <state relative-caret-position="19">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding>
-            <element signature="e#103#126#0" expanded="true" />
+            <element signature="e#68#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+    <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="150" column="45" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+        <state relative-caret-position="19">
+          <caret line="209" column="41" selection-start-line="209" selection-start-column="41" selection-end-line="209" selection-end-column="41" />
           <folding>
-            <element signature="e#68#91#0" expanded="true" />
+            <element signature="e#103#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
