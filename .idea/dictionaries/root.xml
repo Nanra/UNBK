@@ -3,8 +3,12 @@
     <words>
       <w>arrayjawaban</w>
       <w>arraysoal</w>
+      <w>baca</w>
       <w>bahasa</w>
       <w>dasar</w>
+      <w>defenisi</w>
+      <w>gpio</w>
+      <w>huruf</w>
       <w>identitas</w>
       <w>masukan</w>
       <w>memutar</w>
@@ -16,6 +20,7 @@
       <w>sapaan</w>
       <w>sesi</w>
       <w>umum</w>
+      <w>variabels</w>
     </words>
   </dictionary>
 </component>

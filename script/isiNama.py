@@ -1,13 +1,16 @@
 #!/usr/bin/python
 
 # Section for reading braille convert to alphabet
+# Importing Modules and Libraries
 import RPi.GPIO as GPIO
 import time
 import subprocess as cmd
 
+# Defenisi Mode GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
+# Deklarasi Variabels
 pressed = "0"
 nama = ""
 isivalid = ""
@@ -58,7 +61,7 @@ while i < len(pinbtn):
 
 # cmd.call('google_speech -l id "Status Semua PIN OK !"', shell=True)
 print "All Pin OK\n"
-##print "Test Pembacaan Huruf\n"
+# print "Test Pembacaan Huruf\n"
 
 for baca in sapaNama:
     cmd.call(baca, shell=True)
@@ -79,10 +82,10 @@ def braille():
     else:
         return n
 
+
 def abjad(n="111111"):
     if n == "110111":
         x = "A"
-        #ejaHuruf = "omxplayer -o local Abjad/A.mp3"
     elif n == "100111":
         x = "B"
     elif n == "110011":
@@ -140,7 +143,7 @@ def abjad(n="111111"):
     return x
 
 
-def bacainputhuruf():
+def baca__input__huruf():
     baca = braille()
     if baca is None:
         baca
@@ -148,8 +151,8 @@ def bacainputhuruf():
         return baca
 
 
-def bacahuruf():
-    isi = abjad(n=bacainputhuruf())
+def baca_huruf():
+    isi = abjad(n=baca__input__huruf())
     return isi
 
 
@@ -159,9 +162,9 @@ while True:
     tombolNext = str(GPIO.input(pinbtnNext))
     tombolPrev = str(GPIO.input(pinbtnPrev))
     tombolDelete = str(GPIO.input(pinbtnDelete))
-    huruf = bacahuruf()  # Baca Huruf
+    huruf = baca_huruf()  # Baca Huruf
     if huruf == "NULL":
-        bacahuruf()
+        baca_huruf()
     else:
         if tombolValidasi is pressed:
             isivalid = huruf
@@ -193,7 +196,6 @@ while True:
         cmd.call(suaraError, shell=True)
         cmd.call('google_speech -l id "Anda belum mengisikan nama!,,.. Isi nama terlebih dahulu !"', shell=True)
         continue
-
 
     if tombolNext is pressed:
         nama = ''.join(antrian)
