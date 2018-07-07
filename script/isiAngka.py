@@ -47,12 +47,7 @@ print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
 
 
-# # Test Button
-# while True:
-# 	inputValue = GPIO.input(pinbtnValid)
-# 	if (inputValue == False):
-# 		print "Tombol Ditekan"
-# 		time.sleep(0.3)
+
 
 # Fungsi Baca Kode Braille
 def braille():
