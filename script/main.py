@@ -30,8 +30,14 @@ print ("Sesi Pengisian Nama")
 perintah.call(kalNama, shell=True)
 perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
 
-# Pengisian Nama
+# Sesi Pengisian Nama
 print ("Sesi Pengisian Nomor Ujian")
 perintah.call(kalNomor, shell=True)
 perintah.call(kalNomor2, shell=True)
 # perintah.call("python isiNama.py", shell=True)
+
+# Sesi Ujian
+# print ("Sesi Ujian")
+# perintah.call(kalUjian, shell=True)
+# perintah.call(kalUjian2, shell=True)
+# perintah.call("python sesiUjian.py", shell=True)
