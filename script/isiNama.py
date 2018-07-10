@@ -27,7 +27,7 @@ pinbtnEmpat = 37
 pinbtnLima = 35
 pinbtnEnam = 33
 
-# Sound Source
+# Sounds Source
 suara = 'google_speech -l id '
 suaraEnter = "omxplayer -o local notif/Enter.ogg"
 suaraError = "omxplayer -o local notif/Error.ogg"
