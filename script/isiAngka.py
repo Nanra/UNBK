@@ -47,8 +47,6 @@ print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
 
 
-
-
 # Fungsi Baca Kode Braille
 def braille():
     tom1 = str(GPIO.input(pinbtnSatu))

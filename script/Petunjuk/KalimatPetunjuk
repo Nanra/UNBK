@@ -1,0 +1,15 @@
+#1 Untuk mengisi nomor ujian. Mohon perhatikan langkah-langkah berikut ini !
+
+#2 Pertama. masukkan kode braille angka terlebih dahulu dengan menekan kombinasi enam tombol dibagian atas.
+
+#3 Kedua. Tekan tombol validasi untuk memilih angka yang telah dimasukkan kombinasi kode braille nya
+
+#4 Jika kode Angka yang divalidasi tidak sesuai. Silahkan masukkan kembali kode Angka. Kemudian lakukan proses validasi angka kembali !
+
+#5 Ketiga. Tekan tombol enter untuk menyimpan angka yang telah divalidasi !
+
+#6 Jika angka yang disimpan tidak sesuai. Silahkan tekan tombol hapus satu kali untuk menghapus angka !
+
+#7 Kemudian jika angka nomor ujian sudah terisi semua. Silahkan tekan tombol next untuk lanjut ke sesi berikutnya !
+
+#8 Sekarang silahkan masukkan kode Angka !
