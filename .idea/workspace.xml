@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="Update PEP8">
+    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="Update Petunjuk Angka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/isiAngka.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/isiAngka.py" afterDir="false" />
     </list>
@@ -25,8 +25,8 @@
           <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiNama.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+                <state relative-caret-position="-190">
+                  <caret line="47" column="61" selection-start-line="38" selection-end-line="47" selection-end-column="61" />
                   <folding>
                     <element signature="e#103#126#0" expanded="true" />
                   </folding>
@@ -41,8 +41,8 @@
           <file leaf-file-name="isiAngka.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="703">
-                  <caret line="37" selection-start-line="37" selection-end-line="37" />
+                <state relative-caret-position="459">
+                  <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
                   <folding>
                     <element signature="e#68#91#0" expanded="true" />
                   </folding>
@@ -489,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530981972549</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Update Petunjuk Angka">
+      <created>1531197393538</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1531197393538</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update Petunjuk Angka">
+      <created>1531197887975</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1531197887975</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -556,7 +570,8 @@
     <MESSAGE value="Update Isi Angka" />
     <MESSAGE value="Update Isi Nama" />
     <MESSAGE value="Update PEP8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update PEP8" />
+    <MESSAGE value="Update Petunjuk Angka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Petunjuk Angka" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt">
@@ -896,22 +911,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+    <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="-190">
+          <caret line="47" column="61" selection-start-line="38" selection-end-line="47" selection-end-column="61" />
           <folding>
-            <element signature="e#68#91#0" expanded="true" />
+            <element signature="e#103#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/isiNama.py">
+    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="459">
+          <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
           <folding>
-            <element signature="e#103#126#0" expanded="true" />
+            <element signature="e#68#91#0" expanded="true" />
           </folding>
         </state>
       </provider>

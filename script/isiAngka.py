@@ -27,6 +27,22 @@ suaraEnter = "omxplayer -o local notif/Enter.ogg"
 suaraError = "omxplayer -o local notif/Error.ogg"
 suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
 suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
+belum = "omxplayer -o local Petunjuk/belumNomor.ogg"
+belumIsiNomor = "omxplayer -o local Petunjuk/belumIsiNomor.mp3"
+sesiNomor = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor.mp3"
+sesiNomor2 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor2.mp3"
+sesiNomor3 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor3.mp3"
+sesiNomor4 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor4.mp3"
+sesiNomor5 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor5.mp3"
+sesiNomor6 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor6.mp3"
+sesiNomor7 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor7.mp3"
+sesiNomor8 = "omxplayer -o local Petunjuk/sesiNomor/sesiNomor8.mp3"
+validKonfirm = "omxplayer -o local Petunjuk/validKonfirm.mp3"
+validPressed = "omxplayer -o local Petunjuk/validPressed.mp3"
+sapaNomor = [sesiNomor, sesiNomor2,
+             sesiNomor3, sesiNomor4,
+             sesiNomor5, sesiNomor6,
+             sesiNomor7, sesiNomor8]
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
           pinbtnEnter, pinbtnSatu,
@@ -43,7 +59,11 @@ while i < len(pinbtn):
     i += 1
 print "All Pin OK\n"
 
-print "Test Pembacaan Angka\n"
+# Play Greetings
+for baca in sapaNomor:
+    cmd.call(baca, shell=True)
+
+# print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
 
 
