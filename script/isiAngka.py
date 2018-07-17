@@ -7,7 +7,7 @@ import subprocess as cmd
 
 pressed = "0"
 nomorUjian = ""
-isiValid = ""
+isivalid = ""
 antrian = []
 pinbtnValid = 31
 pinbtnNext = 5
@@ -22,7 +22,7 @@ pinbtnLima = 35
 pinbtnEnam = 33
 
 # Sounds Source
-suara = 'google_speech -l id'
+suara = 'google_speech -l id '
 suaraEnter = "omxplayer -o local notif/Enter.ogg"
 suaraError = "omxplayer -o local notif/Error.ogg"
 suaraHapus = "omxplayer -o local notif/Hapus2.ogg"
@@ -60,8 +60,8 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 
 # Play Greetings
-for baca in sapaNomor:
-    cmd.call(baca, shell=True)
+#for baca in sapaNomor:
+#    cmd.call(baca, shell=True)
 
 # print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
@@ -133,57 +133,79 @@ while True:
         bacaAngka()
     else:
         if tombolValidasi is pressed:  # Validation Button
-            isiValid = bacaAngka()
-            suaraAngka = suara + str(isiValid)
+            isivalid = bacaAngka()
+            suaraAngka = suara + str(isivalid)
             cmd.call(suaraAngka, shell=True)
+            print suaraAngka,
+            print "Isi Valid = ", isivalid
         print isiangka,
 
-        if (tombolEnter is pressed) & (isiValid is ""):  # Is Arr Empty
-            print("Anda Belum Mengisi Angka")
-            cmd.call(suaraError, shell=True)
-            cmd.call(belum, shell=True)
+    if (tombolEnter is pressed) & (isivalid is ""):
+        print "Anda Belum Mengisi Huruf"
+        cmd.call(suaraError, shell=True)
+        cmd.call(belum, shell=True)
+        continue
+
+    if tombolEnter is pressed:
+        print "Huruf telah disimpan ke antrian"
+        antrian.append(isivalid)
+        cmd.call(suaraEnter, shell=True)
+        print "Antrian = ", antrian
+        isivalid = ""
+
+    if (tombolNext is pressed) & (len(antrian) == 0):
+        print "Anda tidak bisa lanjutkan, Antrian masih kosong"
+        cmd.call(suaraError, shell=True)
+        cmd.call(belumIsiNomor, shell=True)
+        continue
+
+    if tombolNext is pressed:
+        nama = ''.join(antrian)
+        kalimat = '"Nama Anda Adalah : "' + nama
+        suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
+        cmd.call(suaraKalimat, shell=True)
+        cmd.call(validKonfirm, shell=True)
+        time.sleep(2)  # Witing for Input
+        # Konfirmasi Nama ( Baru sampai disini besok lanjut lagi)
+        tombolValidasi2 = str(GPIO.input(pinbtnValid))
+        print tombolValidasi2
+        if tombolValidasi2 is pressed:
+            print "Y"
+            cmd.call(validPressed, shell=True)
+            break
+        else:
             continue
 
-        if tombolEnter is pressed:  # Saving Num to Arr
-            print("Angka telah disimpan ke antrian")
-            antrian.append(isiValid)
-            cmd.call(suaraEnter, shell=True)
-            print("Antrian = ", antrian)
-            isiValid = ""
+    if (tombolPrev is pressed) & (len(antrian) == 0):
+        print "Anda tidak bisa hapus semua, Antrian masih kosong"
+        cmd.call(suaraError, shell=True)
+        cmd.call(belumIsiNomor, shell=True)
+        continue
 
-        if (tombolNext is pressed) & (len(antrian == 0)):
-            print ("Anda tidak bisa melanjutkan, Antrian masih kosong")
+    if tombolPrev is pressed:
+        cmd.call(suaraHapus, shell=True)
+        antrian = []
+        print "\nAntrian dihapus kabeh Lur\n"
+        cmd.call('google_speech -l id "antrian telah dihapus, sekarang masukkan huruf kembali"', shell=True)
+        print "Masukkan Huruf\n"
+
+    if (tombolDelete is pressed) & (len(antrian) == 0):
+        print "Anda tidak bisa menghapus, Antrian masih kosong"
+        cmd.call(suaraError, shell=True)
+        cmd.call(belumIsiNomor, shell=True)
+        continue
+
+    if tombolDelete is pressed:
+        if len(antrian) is 0:
+            print "Antrian Kosong Laek"
             cmd.call(suaraError, shell=True)
-            cmd.call(belumIsiNim, shell=True)
             continue
-
-        if tombolNext is pressed:
-            nomorUjian = ''.join(antrian)
-            kalimat = '"Nomor ujian Anda adalah : "' + nomorUjian
-            suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Ujian tersebut benar ?"'
-            cmd.call(suaraKalimat, shell=True)
-            cmd.call(validKonfirm, shell=True)
-            time.sleep(3)  # Waiting for input
-            tombolValidasi2 = str(GPIO.input(pinbtnValid))
-            print tombolValidasi2
-            if tombolValidasi2 is pressed:
-                print "Y"
-                cmd.call(validPressed, shell=True)
-                break
-            else:
-                continue
-
-        if tombolDelete is pressed:
+        else:
+            cmd.call(suaraHapus2, shell=True)
+            antrian.pop()
+            print antrian
             if len(antrian) is 0:
-                print "Antrian masih Kosong"
-                cmd.call(suaraError, shell=True)
-                continue
-            else:
-                cmd.call(suaraHapus2, shell=True)
-                antrian.pop()
-                print (antrian)
-                if len(antrian) is 0:
-                    cmd.call('google_speech -l id "Antrian telah kosong. Sekarang silahkan masukkan huruf kembali !')
+                cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
     time.sleep(0.3)
-print("Nomor Ujian : {}".format(nomorUjian))
+print ("Nama adalah : {}".format(nama))

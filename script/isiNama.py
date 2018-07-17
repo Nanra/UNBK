@@ -67,8 +67,8 @@ print "All Pin OK\n"
 # print "Test Pembacaan Huruf\n"
 
 # Play Greetings
-for baca in sapaNama:
-    cmd.call(baca, shell=True)
+#for baca in sapaNama:
+#    cmd.call(baca, shell=True)
 print "Masukkan Huruf\n"
 
 
