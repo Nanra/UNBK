@@ -60,10 +60,10 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 
 # Play Greetings
-#for baca in sapaNomor:
-#    cmd.call(baca, shell=True)
+for baca in sapaNomor:
+    cmd.call(baca, shell=True)
 
-# print "Test Pembacaan Angka\n"
+print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
 
 
@@ -160,9 +160,9 @@ while True:
         continue
 
     if tombolNext is pressed:
-        nama = ''.join(antrian)
-        kalimat = '"Nama Anda Adalah : "' + nama
-        suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
+        nomor = '-'.join(antrian)
+        kalimat = '"Nomor Ujian Anda Adalah : "' + nomor
+        suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Tersebut sesuai ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call(validKonfirm, shell=True)
         time.sleep(2)  # Witing for Input
@@ -208,4 +208,5 @@ while True:
                 cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
     time.sleep(0.3)
-print ("Nama adalah : {}".format(nama))
+nomorUjian = nomor.translate(None, '-') # To Remove '-' symbol
+print ("Nomor Ujian adalah : {}".format(nomorUjian))

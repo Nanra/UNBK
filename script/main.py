@@ -22,18 +22,29 @@ for baca in arraySapaan:
 
 # Sesi Pengisian Identitas Peserta Ujian
 print ("Sesi Pengisian Identitas Ujian")
+# Uncomment for debugging
+print ("Playing KalID")
 perintah.call(kalID, shell=True)
+print ("Playing KalID2")
 perintah.call(kalID2, shell=True)
 
 # Sesi Pengisian Nama
 print ("Sesi Pengisian Nama")
-perintah.call(kalNama, shell=True)
-# perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
+# Uncomment for debugging
+print ("Playing KalNama")
+# perintah.call(kalNama, shell=True)
+print ("Playing Isi Angka Section")
+perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
 
 # Sesi Pengisian Nama
 print ("Sesi Pengisian Nomor Ujian")
+# Uncomment for debugging
+print ("Playing KalNomor")
 perintah.call(kalNomor, shell=True)
-perintah.call(kalNomor2, shell=True)
+# Uncomment for debugging
+# print ("Playing KalNomor2")
+# perintah.call(kalNomor2, shell=True)
+print ("Playing Isi Angka Section")
 perintah.call("python isiAngka.py", shell=True)
 
 # Sesi Ujian
