@@ -1,6 +1,7 @@
 # Main Aplikasi Keseluruhan Untuk Proses Ujian
 
 import subprocess as perintah
+import check_connection
 
 # Source Sound
 sapa1 = "omxplayer -o local Petunjuk/sapaan/sapaan.mp3"
@@ -17,8 +18,8 @@ kalNomor2 = "omxplayer -o local Petunjuk/sapaan/sapaanNomor2.mp3"
 
 # Greetings Sessions
 print ("Greetings Session")
-for baca in arraySapaan:
-    perintah.call(baca, shell=True)
+#for baca in arraySapaan:
+#    perintah.call(baca, shell=True)
 
 # Sesi Pengisian Identitas Peserta Ujian
 print ("Sesi Pengisian Identitas Ujian")
@@ -34,7 +35,7 @@ print ("Sesi Pengisian Nama")
 print ("Playing KalNama")
 # perintah.call(kalNama, shell=True)
 print ("Playing Isi Angka Section")
-perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
+#perintah.call("python isiNama.py", shell=True)  # Opening Module isiNama.py
 
 # Sesi Pengisian Nama
 print ("Sesi Pengisian Nomor Ujian")
@@ -45,7 +46,7 @@ perintah.call(kalNomor, shell=True)
 # print ("Playing KalNomor2")
 # perintah.call(kalNomor2, shell=True)
 print ("Playing Isi Angka Section")
-perintah.call("python isiAngka.py", shell=True)
+#perintah.call("python isiAngka.py", shell=True)
 
 # Sesi Ujian
 # print ("Sesi Ujian")
