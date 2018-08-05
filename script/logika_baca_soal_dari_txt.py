@@ -15,10 +15,10 @@ def main():
     bacaan_soal.close()
     bacaan_jawaban.close()
 
-    for s in parsing_sapaan:
-        kalimat_sapaan = ('"{}"'.format(s))
-        isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.9 '
-        perintah.call(isi_sapaan, shell=True)
+    #for s in parsing_sapaan:
+    #    kalimat_sapaan = ('"{}"'.format(s))
+    #    isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 0.9 '
+    #    perintah.call(isi_sapaan, shell=True)
 
     i = 0
     for line in parsing_soal:
