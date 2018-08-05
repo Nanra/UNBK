@@ -21,7 +21,8 @@ GPIO.setwarnings(False)
 # Deklarasi Variabels
 arraySoal = []
 arrayPilihan = []
-antrian = []
+jawaban = []
+soalSkip = []
 pressed = "0"
 noSoal = 0
 isivalid = ""
@@ -199,16 +200,23 @@ while noSoal < len(parsingSoal):
 
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
-            antrian.insert(noSoal, isivalid) # Saving Answer With Specific Index
+            jawaban.insert(noSoal, isivalid) # Saving Answer With Specific Index
             cmd.call(suaraEnter, shell=True)
-            print "Jawaban = ", antrian
+            print "Jawaban = ", jawaban
             isivalid = ""
             continue
 
-        if (tombolNext is pressed) & (len(antrian) == 0):
-            print "Anda tidak bisa lanjutkan, Jawaban masih kosong"
-            cmd.call(suaraError, shell=True)
-            cmd.call(belumIsiNama, shell=True)
+        if (tombolNext is pressed) & (len(jawaban) == 0): # Skip Soal
+            print "Tombol Next ditekan, Jawaban masih kosong"
+            jawaban.insert(noSoal,"0")
+            soalSkip.insert(noSoal)
+            noSoal =+ 1
+            cmd.call('google_speech -l id "Soal dilewati"', shell=True)
+            print (jawaban)
+            print (soalSkip)
+            break
+            # cmd.call(suaraError, shell=True)
+            # cmd.call(belumIsiNama, shell=True)
             continue
 
         if tombolNext is pressed:
@@ -247,16 +255,16 @@ while noSoal < len(parsingSoal):
             # print "Masukkan Huruf\n"
 
         if tombolDelete is pressed:
-            if len(antrian) is 0:
+            if len(jawaban) is 0:
                 print "Jawaban masih Kosong"
                 cmd.call(suaraError, shell=True)
                 cmd.call('google_speech -l id "Anda belum memasukkan Jawaban, Masukkan Jawaban terlebih dahulu"', shell=True)
                 continue
             else:
                 cmd.call(suaraHapus2, shell=True)
-                antrian.pop()
-                print antrian
-                if len(antrian) is 0:
+                jawaban.pop()
+                print jawaban
+                if len(jawaban) is 0:
                     cmd.call('google_speech -l id "Jawaban telah dihapus, sekarang masukkan jawaban kembali"', shell=True)
 
         time.sleep(0.3)
