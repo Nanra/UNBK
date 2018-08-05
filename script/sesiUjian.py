@@ -243,6 +243,7 @@ while noSoal < len(parsingSoal):
 
         if tombolPrev is pressed:
             print "Tombol Previous Ditekan"
+            time.sleep(0.5)
             tombolPrev2 = str(GPIO.input(pinbtnPrev))
             if tombolPrev2 is pressed: # Back to previous Soal
                 noSoal = noSoal - 1
