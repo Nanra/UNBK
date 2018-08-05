@@ -254,6 +254,9 @@ while noSoal < len(parsingSoal):
             time.sleep(1)
             tombolPrev2 = str(GPIO.input(pinbtnPrev))
             if tombolPrev2 is pressed: # Back to previous Soal
+                if noSoal == 0:
+                    print "Ini Soal nomor Satu laek "
+                    cmd.call('google_speech -l id "Ini Merupakan Soal Nomor Satu, Anda tidak bisa mundur ke soal sebelumnya lagi"', shell=True)
                 noSoal = noSoal - 1
                 break
             else: # Play again soal
