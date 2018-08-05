@@ -261,7 +261,7 @@ while noSoal < len(parsingSoal):
 
 
         if tombolDelete is pressed:
-            if len(jawaban) is 0:
+            if cek_dict(noSoal) is False:
                 print "Jawaban masih Kosong"
                 cmd.call(suaraError, shell=True)
                 cmd.call('google_speech -l id "Anda belum memasukkan Jawaban, Masukkan Jawaban terlebih dahulu"', shell=True)
