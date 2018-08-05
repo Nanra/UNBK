@@ -200,6 +200,7 @@ while noSoal < len(parsingSoal):
             cmd.call(suaraEnter, shell=True)
             print "Antrian = ", antrian
             isivalid = ""
+            break
 
         if (tombolNext is pressed) & (len(antrian) == 0):
             print "Anda tidak bisa lanjutkan, Antrian masih kosong"
