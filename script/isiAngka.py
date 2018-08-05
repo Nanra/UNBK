@@ -236,7 +236,11 @@ sql = "UPDATE testdb SET noUjian = '%s' WHERE id = '%d' "%(noUjian, idSiswa)
 try:
     cursor.execute(sql)
     db.commit()
+<<<<<<< HEAD
     print ('Data Nomor Ujian : {} dengan ID = {} berhasil disimpan').format(noUjian, idSiswa)
+=======
+    print ('Data berhasil disimpan')
+>>>>>>> 1764da6e027880181eae3b371c59cab7afdc29e1
 
 except:
     db.rollback()

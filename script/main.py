@@ -46,7 +46,11 @@ perintah.call(kalNomor, shell=True)
 # print ("Playing KalNomor2")
 # perintah.call(kalNomor2, shell=True)
 print ("Playing Isi Angka Section")
+<<<<<<< HEAD
 perintah.call("python isiAngka.py", shell=True) # Opening Module isiAngka.py
+=======
+perintah.call("python isiAngka.py", shell=True)
+>>>>>>> 1764da6e027880181eae3b371c59cab7afdc29e1
 
 # Sesi Ujian
 # print ("Sesi Ujian")
