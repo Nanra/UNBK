@@ -265,10 +265,10 @@ while noSoal < len(parsingSoal):
                 continue
             else:
                 cmd.call(suaraHapus2, shell=True)
-                jawaban.pop()
+                del jawaban[noSoal]
                 print jawaban
-                if len(jawaban) is 0:
-                    cmd.call('google_speech -l id "Jawaban telah dihapus, sekarang masukkan jawaban kembali"', shell=True)
+                #if len(jawaban) is 0:
+                cmd.call('google_speech -l id "Jawaban telah dihapus, sekarang masukkan jawaban kembali"', shell=True)
 
         time.sleep(0.3)
     # noSoal += 1
