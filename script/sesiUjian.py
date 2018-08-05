@@ -126,6 +126,13 @@ def baca_huruf():
     isi = abjad(n=baca__input__huruf())
     return isi
 
+# Fungsi Cek isi Dictionary
+def cek_dict(noSoal):
+    if noSoal in jawaban:
+        return True
+    else:
+        return False
+
 # Reading Section
 
 # bacaan_sapaan = open("Sapaan_Umum.txt", "r")
@@ -208,7 +215,7 @@ while noSoal < len(parsingSoal):
             isivalid = ""
             continue
 
-        if (tombolNext is pressed) & (jawaban.values() == 0): # Skip Soal
+        if (tombolNext is pressed) & (cek_dict(noSoal) is False): # Skip Soal
             print "Tombol Next ditekan, Jawaban masih kosong"
             jawaban[noSoal] = ""
             soalSkip.insert(noSoal, noSoal)
