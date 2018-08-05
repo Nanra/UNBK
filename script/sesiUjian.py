@@ -208,7 +208,7 @@ while noSoal < len(parsingSoal):
             isivalid = ""
             continue
 
-        if (tombolNext is pressed) & (len(jawaban[noSoal]) == 0): # Skip Soal
+        if (tombolNext is pressed) & jawaban.get[noSoal,""] is True): # Skip Soal
             print "Tombol Next ditekan, Jawaban masih kosong"
             jawaban[noSoal] = ""
             soalSkip.insert(noSoal, noSoal)
