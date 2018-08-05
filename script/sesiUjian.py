@@ -210,7 +210,7 @@ while noSoal < len(parsingSoal):
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
             jawaban[noSoal] = isivalid # Saving Answer With Specific Index
-            if noSoal in soalSkip :
+            if noSoal in soalSkip : # Check Apakah soal pernah dilewat
                 soalSkip.remove(soalSkip[noSoal])
                 print ("Soal Skip : {}").format(soalSkip)
             cmd.call(suaraEnter, shell=True)
@@ -221,15 +221,12 @@ while noSoal < len(parsingSoal):
         if (tombolNext is pressed) & (cek_dict(noSoal) is False): # Skip Soal
             print "Tombol Next ditekan, Jawaban masih kosong"
             jawaban[noSoal] = ""
-            soalSkip.insert(noSoal, noSoal)
+            soalSkip.insert(noSoal, noSoal) # Menyimpan Indeks Soal yang dilewat
             noSoal = noSoal + 1
             cmd.call('google_speech -l id "Soal dilewati"', shell=True)
             print (jawaban)
             print (soalSkip)
             break
-            # cmd.call(suaraError, shell=True)
-            # cmd.call(belumIsiNama, shell=True)
-            continue
 
         if tombolNext is pressed:
             noSoal += 1
