@@ -193,7 +193,8 @@ while noSoal < len(parsingSoal):
         if (tombolEnter is pressed) & (isivalid is ""):
             print "Anda Belum Mengisi Jawaban"
             cmd.call(suaraError, shell=True)
-            cmd.call(belum, shell=True)
+            # cmd.call(belum, shell=True)
+            cmd.call('google_speech -l id "Anda belum memilih jawaban, pilih jawaban terlebih dahulu"', shell=True)
             continue
 
         if tombolEnter is pressed:
@@ -231,6 +232,7 @@ while noSoal < len(parsingSoal):
             #     continue
 
         if tombolPrev is pressed:
+            print "Tombol Previous Ditekan"
             tombolPrev2 = str(GPIO.input(pinbtnPrev))
             if tombolPrev2 is pressed: # Back to previous Soal
                 noSoal = noSoal - 1
@@ -248,6 +250,7 @@ while noSoal < len(parsingSoal):
             if len(antrian) is 0:
                 print "Jawaban masih Kosong"
                 cmd.call(suaraError, shell=True)
+                cmd.call('google_speech -l id "Anda belum memasukkan Jawaban, Masukkan Jawaban terlebih dahulu"', shell=True)
                 continue
             else:
                 cmd.call(suaraHapus2, shell=True)
