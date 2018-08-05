@@ -210,6 +210,8 @@ while noSoal < len(parsingSoal):
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
             jawaban[noSoal] = isivalid # Saving Answer With Specific Index
+            if soalSkip[noSoal] == noSoal :
+                soalSkip.remove(soalSkip[noSoal])
             cmd.call(suaraEnter, shell=True)
             print "Jawaban = ", jawaban
             isivalid = ""
