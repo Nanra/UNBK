@@ -224,6 +224,7 @@ while noSoal < len(parsingSoal):
         if tombolNext is pressed:
             noSoal += 1
             break
+
             # print "Tombol Next Telah Ditekan"
             # nama = ''.join(antrian)
             # kalimat = '"Nama Anda Adalah : "' + nama
@@ -251,11 +252,6 @@ while noSoal < len(parsingSoal):
             else: # Play again soal
                 break
 
-            # cmd.call(suaraHapus, shell=True)
-            # antrian = []
-            # print "\nAntrian telah dihapus semua\n"
-            # cmd.call('google_speech -l id "antrian telah dihapus, sekarang masukkan huruf kembali"', shell=True)
-            # print "Masukkan Huruf\n"
 
         if tombolDelete is pressed:
             if len(jawaban) is 0:
