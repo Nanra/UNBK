@@ -6,6 +6,15 @@ import RPi.GPIO as GPIO
 import time
 import subprocess as cmd
 
+# Database connection
+import MySQLdb
+db = MySQLdb.connect(host="172.20.10.3",
+                     user="root",
+                     passwd="raspberry",
+                     db="sisunbk")
+cursor = db.cursor()
+print ("Database OK..")
+
 # Defenisi Mode GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
@@ -67,8 +76,8 @@ print "All Pin OK\n"
 # print "Test Pembacaan Huruf\n"
 
 # Play Greetings
-for baca in sapaNama:
-    cmd.call(baca, shell=True)
+#for baca in sapaNama:
+#    cmd.call(baca, shell=True)
 print "Masukkan Huruf\n"
 
 
@@ -202,13 +211,14 @@ while True:
         continue
 
     if tombolNext is pressed:
+        print "Tombol Next Telah Ditekan"
         nama = ''.join(antrian)
         kalimat = '"Nama Anda Adalah : "' + nama
         suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call(validKonfirm, shell=True)
-        time.sleep(2)  # Witing for Input
-        # Konfirmasi Nama ( Baru sampai disini besok lanjut lagi)
+        print "Menunggu Konfirmasi ...."
+        time.sleep(2)  # Witing for Input Konfirmasi
         tombolValidasi2 = str(GPIO.input(pinbtnValid))
         print tombolValidasi2
         if tombolValidasi2 is pressed:
@@ -221,7 +231,7 @@ while True:
     if tombolPrev is pressed:
         cmd.call(suaraHapus, shell=True)
         antrian = []
-        print "\nAntrian dihapus kabeh Lur\n"
+        print "\nAntrian telah dihapus semua\n"
         cmd.call('google_speech -l id "antrian telah dihapus, sekarang masukkan huruf kembali"', shell=True)
         print "Masukkan Huruf\n"
 
@@ -238,4 +248,29 @@ while True:
                 cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
     time.sleep(0.3)
-print ("Nama adalah : {}".format(nama))
+    
+# Query Simpan Data Nama ke Database Server
+sql = "INSERT INTO testdb (namaSiswa) VALUES ('%s')"%(nama)
+sql2 = "SELECT id FROM testdb WHERE namaSiswa = '%s'"%(nama)
+
+try:
+    cursor.execute(sql) # Eksekusi Query simpan database
+    db.commit()
+    print ('Data Nama : {} berhasil disimpan ke database').format(nama)
+
+    cursor.execute(sql2) # Eksekusi Query ambil ID nama
+    for row in cursor.fetchall():
+        idSiswa = row[0]
+    print ('Data ID Siswa {} = {}').format(nama, idSiswa)
+
+    # Menyimpan Data ID ke dalam berkas
+    berkas = open("dataID.txt", "w")
+    berkas.write(str(idSiswa))
+    print ("Data ID berhasil disimpan ke berkas")
+    berkas.close()
+
+except:
+    db.rollback()
+    print('Oopss... Ada error nih')
+
+db.close()

@@ -5,6 +5,16 @@ import RPi.GPIO as GPIO
 import time
 import subprocess as cmd
 
+# Database connection
+import MySQLdb
+db = MySQLdb.connect(host="172.20.10.3",
+                     user="root",
+                     passwd="raspberry",
+                     db="sisunbk")
+cursor = db.cursor()
+print ("Database OK..")
+
+# Deklarasi Variables
 pressed = "0"
 nomorUjian = ""
 isivalid = ""
@@ -60,8 +70,8 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 
 # Play Greetings
-for baca in sapaNomor:
-    cmd.call(baca, shell=True)
+#for baca in sapaNomor:
+#    cmd.call(baca, shell=True)
 
 print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"
@@ -136,7 +146,8 @@ while True:
             isivalid = bacaAngka()
             suaraAngka = suara + str(isivalid)
             cmd.call(suaraAngka, shell=True)
-            print suaraAngka,
+            # Uncomment for debugging
+            # print suaraAngka,
             print "Isi Valid = ", isivalid
         print isiangka,
 
@@ -160,13 +171,14 @@ while True:
         continue
 
     if tombolNext is pressed:
+        print ("Tombol Next Telah Ditekan")
         nomor = '-'.join(antrian)
         kalimat = '"Nomor Ujian Anda Adalah : "' + nomor
         suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Tersebut sesuai ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call(validKonfirm, shell=True)
-        time.sleep(2)  # Witing for Input
-        # Konfirmasi Nama ( Baru sampai disini besok lanjut lagi)
+        print ("Menunggu Konfirmasi")
+        time.sleep(2)  # Witing for Input Konfirmasi
         tombolValidasi2 = str(GPIO.input(pinbtnValid))
         print tombolValidasi2
         if tombolValidasi2 is pressed:
@@ -208,5 +220,26 @@ while True:
                 cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
     time.sleep(0.3)
-nomorUjian = nomor.translate(None, '-') # To Remove '-' symbol
-print ("Nomor Ujian adalah : {}".format(nomorUjian))
+noUjian = nomor.translate(None, '-') # To Remove '-' symbol
+
+
+# Menyimpan Data ID ke dalam berkas
+berkas = open("dataID.txt", "r")
+idSiswa = berkas.read()
+idSiswa = int(idSiswa)
+print ("Data ID = {}").format(idSiswa)
+berkas.close()
+
+
+sql = "UPDATE testdb SET noUjian = '%s' WHERE id = '%d' "%(noUjian, idSiswa)
+# sql2 = "SELECT id FROM testdb WHERE namaSiswa = '%s'"%(namaSiswa)
+try:
+    cursor.execute(sql)
+    db.commit()
+    print ('Data berhasil disimpan')
+
+except:
+    db.rollback()
+    print('Oopss... Ada error nih')
+
+db.close()
