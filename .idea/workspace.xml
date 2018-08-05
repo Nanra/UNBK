@@ -23,8 +23,8 @@
       <file leaf-file-name="sesiUjian.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="210" column="54" selection-start-line="210" selection-start-column="54" selection-end-line="210" selection-end-column="54" />
+            <state relative-caret-position="379">
+              <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -377,20 +377,6 @@
       <option name="presentableId" value="Default" />
       <updated>1508090822879</updated>
     </task>
-    <task id="LOCAL-00001" summary="Update Voice">
-      <created>1520845425892</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1520845425892</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update Voice">
-      <created>1520845676925</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1520845676925</updated>
-    </task>
     <task id="LOCAL-00003" summary="Update Logika Bacaan">
       <created>1521795747858</created>
       <option name="number" value="00003" />
@@ -720,7 +706,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533499267953</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Update Sesi Ujian">
+      <created>1533499535793</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1533499535794</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Update Sesi Ujian">
+      <created>1533500116146</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1533500116146</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1145,8 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="210" column="54" selection-start-line="210" selection-start-column="54" selection-end-line="210" selection-end-column="54" />
+        <state relative-caret-position="379">
+          <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
         </state>
       </provider>
     </entry>

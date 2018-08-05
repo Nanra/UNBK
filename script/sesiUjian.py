@@ -219,7 +219,7 @@ while noSoal < len(parsingSoal):
             print "Tombol Next ditekan, Jawaban masih kosong"
             jawaban[noSoal] = ""
             soalSkip.insert(noSoal, noSoal)
-            noSoal =+ 1
+            noSoal = noSoal + 1
             cmd.call('google_speech -l id "Soal dilewati"', shell=True)
             print (jawaban)
             print (soalSkip)
