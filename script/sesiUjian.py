@@ -191,14 +191,14 @@ while noSoal < len(parsingSoal):
             print huruf,
 
         if (tombolEnter is pressed) & (isivalid is ""):
-            print "Anda Belum Mengisi Huruf"
+            print "Anda Belum Mengisi Jawaban"
             cmd.call(suaraError, shell=True)
             cmd.call(belum, shell=True)
             continue
 
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
-            antrian.append(isivalid)
+            antrian.insert(noSoal, isivalid) # Saving Answer With Specific Index
             cmd.call(suaraEnter, shell=True)
             print "Jawaban = ", antrian
             isivalid = ""
@@ -236,7 +236,6 @@ while noSoal < len(parsingSoal):
                 noSoal = noSoal - 1
                 break
             else: # Play again soal
-                noSoal = noSoal
                 break
 
             # cmd.call(suaraHapus, shell=True)
@@ -255,7 +254,7 @@ while noSoal < len(parsingSoal):
                 antrian.pop()
                 print antrian
                 if len(antrian) is 0:
-                    cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
+                    cmd.call('google_speech -l id "Jawaban telah dihapus, sekarang masukkan jawaban kembali"', shell=True)
 
         time.sleep(0.3)
     # noSoal += 1

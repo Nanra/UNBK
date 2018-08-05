@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="Update Petunjuk Angka">
+    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/isiAngka.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/isiAngka.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/sesiUjian.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/sesiUjian.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,40 +19,47 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/script/isiNama.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-190">
-                  <caret line="47" column="61" selection-start-line="38" selection-end-line="47" selection-end-column="61" />
-                  <folding>
-                    <element signature="e#103#126#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="isiAngka.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#68#91#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="sesiUjian.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="259" column="17" lean-forward="true" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jawaban_Pengetahuan_Sosial_IPS.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Soal_Pengetahuan_Sosial_IPS.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/isiNama.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="249" column="19" lean-forward="true" selection-start-line="171" selection-end-line="249" selection-end-column="19" />
+              <folding>
+                <element signature="e#103#126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -68,13 +75,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/script/logika_soal_speech.py" />
-        <option value="$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt" />
         <option value="$PROJECT_DIR$/script/Sapaan_Umum.txt" />
-        <option value="$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt" />
         <option value="$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py" />
         <option value="$PROJECT_DIR$/script/main.py" />
         <option value="$PROJECT_DIR$/script/isiNama.py" />
         <option value="$PROJECT_DIR$/script/isiAngka.py" />
+        <option value="$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt" />
+        <option value="$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt" />
+        <option value="$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt" />
+        <option value="$PROJECT_DIR$/script/sesiUjian.py" />
       </list>
     </option>
   </component>
@@ -89,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,8 +136,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/script/isiAngka.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/script/isiNama.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/script/main.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
@@ -137,6 +149,13 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/check_connection.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/dataID.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/main.py.save</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/sesiUjian.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/testWrite.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/testdb.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/tulis_soal_jawaban.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -144,6 +163,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/logika_soal_speech.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -503,14 +523,56 @@
       <option name="project" value="LOCAL" />
       <updated>1531197887975</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update Petunjuk Angka">
+      <created>1531199182532</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531199182532</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update Sesi Ujian">
+      <created>1533485968337</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533485968337</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update Sesi Ujian">
+      <created>1533486131813</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1533486131813</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update Sesi Ujian">
+      <created>1533486375678</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1533486375678</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update Sesi Ujian">
+      <created>1533489639481</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1533489639481</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update Sesi Ujian">
+      <created>1533490150233</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1533490150233</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2693997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32626426" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280255" />
@@ -571,37 +633,10 @@
     <MESSAGE value="Update Isi Nama" />
     <MESSAGE value="Update PEP8" />
     <MESSAGE value="Update Petunjuk Angka" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Petunjuk Angka" />
+    <MESSAGE value="Update Sesi Ujian" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Sesi Ujian" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -847,20 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -882,13 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -904,30 +918,77 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/#test.py#" />
+    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/Jawaban_Dasar_Bahasa Indonesia.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/Soal_Dasar_Bahasa Indonesia.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="104" selection-start-line="6" selection-end-line="6" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script/bacaSoal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="512">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="47" column="61" selection-start-line="38" selection-end-line="47" selection-end-column="61" />
+        <state relative-caret-position="322">
+          <caret line="249" column="19" lean-forward="true" selection-start-line="171" selection-end-line="249" selection-end-column="19" />
           <folding>
             <element signature="e#103#126#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+    <entry file="file://$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="65" column="2" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
-          <folding>
-            <element signature="e#68#91#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="19">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="259" column="17" lean-forward="true" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
         </state>
       </provider>
     </entry>
