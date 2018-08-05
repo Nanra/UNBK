@@ -245,7 +245,6 @@ while noSoal < len(parsingSoal):
                     cmd.call('google_speech -l id "antrian telah kosong, sekarang masukkan huruf kembali"', shell=True)
 
         time.sleep(0.3)
-    
     noSoal += 1
 else:
     print "Selesai"
