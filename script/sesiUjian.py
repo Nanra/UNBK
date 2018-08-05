@@ -153,7 +153,8 @@ for pilihan in parsingPilihan:
 while noSoal < len(parsingSoal):
     # Proses pembacaan soal
     #print arraySoal
-    kalimatSoal = ('"Soal Nomor {} ...., {}"'.format(noSoal + 1, arraySoal[noSoal]))
+    bacaNomor = noSoal
+    kalimatSoal = ('"Soal Nomor {} ...., {}"'.format(bacaNomor + 1, arraySoal[noSoal]))
     isiSoal = 'google_speech -l id ' + kalimatSoal + ' -e speed 1 '
     print noSoal, isiSoal
     cmd.call(isiSoal, shell=True)
