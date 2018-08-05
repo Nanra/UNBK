@@ -223,7 +223,7 @@ while noSoal < len(parsingSoal):
             jawaban[noSoal] = ""
             soalSkip.insert(noSoal, noSoal) # Menyimpan Indeks Soal yang dilewat
             noSoal = noSoal + 1
-            bacaNomorLewat = '"Soal Nomor {} dilewati"'.format(bacaNomor)
+            bacaNomorLewat = '"Soal Nomor {} dilewati"'.format(bacaNomor + 1)
             cmd.call('google_speech -l id ' + bacaNomorLewat + '', shell=True)
             print (jawaban)
             print (soalSkip)
