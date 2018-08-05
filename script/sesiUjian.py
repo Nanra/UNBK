@@ -256,7 +256,8 @@ while noSoal < len(parsingSoal):
             if tombolPrev2 is pressed: # Back to previous Soal
                 if noSoal == 0:
                     print "Ini Soal nomor Satu laek "
-                    cmd.call('google_speech -l id "Ini Merupakan Soal Nomor Satu, Anda tidak bisa mundur ke soal sebelumnya lagi"', shell=True)
+                    cmd.call('google_speech -l id "Ini Merupakan Soal Nomor Satu, Anda tidak bisa mundur ke soal sebelumnya."', shell=True)
+                    continue
                 noSoal = noSoal - 1
                 break
             else: # Play again soal
