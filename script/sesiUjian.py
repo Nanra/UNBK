@@ -46,6 +46,7 @@ suaraHapus2 = "omxplayer -o local notif/Hapus.ogg"
 belum = "omxplayer -o local notif/belum.ogg"
 belumIsiNama = "omxplayer -o local Petunjuk/belumIsiNama.mp3"
 tandaStrip = 'google_speech -l id "Tanda Strip"'
+sesiMasukkanJawaban = 'google_speech -l id "Silahkan Masukkan Jawaban Anda !"'
 ##sesiNama = "omxplayer -o local Petunjuk/sesiNama/sesiNama.mp3"
 ##sesiNama2 = "omxplayer -o local Petunjuk/sesiNama/sesiNama2.mp3"
 ##sesiNama3 = "omxplayer -o local Petunjuk/sesiNama/sesiNama3.mp3"
@@ -166,6 +167,7 @@ while noSoal < len(parsingSoal):
     # Proses menerima jawaban dari Siswa
 
     print "\nMenunggu Jawaban dari User...."
+    cmd.call(sesiMasukkanJawaban, shell=True)
     while True:
         tombolValidasi = str(GPIO.input(pinbtnValid))
         tombolEnter = str(GPIO.input(pinbtnEnter))
