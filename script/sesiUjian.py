@@ -169,6 +169,7 @@ while noSoal < len(parsingSoal):
     # Proses menerima jawaban dari Siswa
 
     print "\nMenunggu Jawaban dari User...."
+    print ("Nomor Index Array Sekarang {}").format(noSoal)
     cmd.call(sesiMasukkanJawaban, shell=True)
     while True:
         tombolValidasi = str(GPIO.input(pinbtnValid))
@@ -201,8 +202,7 @@ while noSoal < len(parsingSoal):
 
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
-            # jawaban.insert(noSoal, isivalid) # Saving Answer With Specific Index
-            jawaban[noSoal] = isivalid
+            jawaban.insert(noSoal, isivalid) # Saving Answer With Specific Index
             cmd.call(suaraEnter, shell=True)
             print "Jawaban = ", jawaban
             isivalid = ""
