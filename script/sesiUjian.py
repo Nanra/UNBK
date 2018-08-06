@@ -6,13 +6,13 @@ import subprocess as cmd
 import sys
 
 # Database connection
-#import MySQLdb
-#db = MySQLdb.connect(host="172.20.10.3",
-#                     user="root",
-#                     passwd="raspberry",
-#                     db="sisunbk")
-#cursor = db.cursor()
-#print ("Database OK..")
+import MySQLdb
+db = MySQLdb.connect(host="172.20.10.3",
+                     user="root",
+                     passwd="raspberry",
+                     db="sisunbk")
+cursor = db.cursor()
+print ("Database OK..")
 
 # Defenisi Mode GPIO
 GPIO.setmode(GPIO.BOARD)
@@ -280,5 +280,9 @@ while noSoal < len(parsingSoal):
         time.sleep(0.3)
     # noSoal += 1
 else:
+    list_jawaban = list(jawaban.values())
+    print (list_jawaban)
+    jawabanAkhir = ''.join(list_jawaban)
+    print (jawabanAkhir)
     print "Selesai"
     sys.exit()
