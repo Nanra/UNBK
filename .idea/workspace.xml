@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="">
+    <list default="true" id="943d5232-ff3f-4d20-9c79-7dc5c25a58f3" name="Default" comment="Update Sesi Ujian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/sesiUjian.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/sesiUjian.py" afterDir="false" />
     </list>
@@ -23,8 +23,20 @@
       <file leaf-file-name="sesiUjian.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="225" column="73" selection-start-line="225" selection-start-column="73" selection-end-line="225" selection-end-column="73" />
+            <state relative-caret-position="364">
+              <caret line="299" column="88" selection-start-line="299" selection-start-column="88" selection-end-line="299" selection-end-column="88" />
+              <folding>
+                <element signature="e#60#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isiAngka.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="245" column="10" lean-forward="true" selection-start-line="225" selection-end-line="245" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -43,18 +55,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/isiNama.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="249" column="19" lean-forward="true" selection-start-line="171" selection-end-line="249" selection-end-column="19" />
-              <folding>
-                <element signature="e#103#126#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,7 +116,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,12 +137,9 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/isiAngka.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/isiNama.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/main.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/check_connection.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/dataID.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/sesiUjian.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -150,13 +147,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/check_connection.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/dataID.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/main.py.save</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/sesiUjian.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/testWrite.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/testdb.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/tulis_soal_jawaban.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/testLed.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -164,7 +155,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/script/logika_soal_speech.py</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -376,13 +366,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508090822879</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update Isi Angka">
-      <created>1530809675031</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1530809675031</updated>
     </task>
     <task id="LOCAL-00014" summary="Update Isi Angka">
       <created>1530809789713</created>
@@ -720,23 +703,30 @@
       <option name="project" value="LOCAL" />
       <updated>1533503119412</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Update Sesi Ujian">
+      <created>1533503227459</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1533503227459</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32484075" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280255" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50073206" side_tool="true" weight="0.32789558" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32484075" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49926794" weight="0.32789558" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -827,13 +817,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -869,13 +853,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/Soal_Pengetahuan_Sosial_IPS.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -911,13 +889,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/Jawaban_Pengetahuan_Sosial_IPS.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -946,13 +918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/logika_baca_soal_dari_txt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -988,13 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/Sapaan_Umum.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1023,13 +983,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/txtConverter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -1058,13 +1012,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="143" selection-start-line="6" selection-start-column="143" selection-end-line="6" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/script/logika_soal_speech.py" />
     <entry file="file://$PROJECT_DIR$/script/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1073,16 +1021,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/#test.py#" />
-    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
-          <folding>
-            <element signature="e#68#91#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1121,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="249" column="19" lean-forward="true" selection-start-line="171" selection-end-line="249" selection-end-column="19" />
+        <state relative-caret-position="4636">
+          <caret line="249" column="19" selection-start-line="171" selection-end-line="249" selection-end-column="19" />
           <folding>
             <element signature="e#103#126#0" expanded="true" />
           </folding>
@@ -1143,10 +1081,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="245" column="10" lean-forward="true" selection-start-line="225" selection-end-line="245" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script/sesiUjian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="225" column="73" selection-start-line="225" selection-start-column="73" selection-end-line="225" selection-end-column="73" />
+        <state relative-caret-position="364">
+          <caret line="299" column="88" selection-start-line="299" selection-start-column="88" selection-end-line="299" selection-end-column="88" />
+          <folding>
+            <element signature="e#60#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

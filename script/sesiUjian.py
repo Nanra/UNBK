@@ -284,5 +284,27 @@ else:
     print (list_jawaban)
     jawabanAkhir = ''.join(list_jawaban)
     print (jawabanAkhir)
+
+    # Menyimpan Data ID ke dalam berkas
+    berkas = open("dataID.txt", "r")
+    idSiswa = berkas.read()
+    idSiswa = int(idSiswa)
+    print ("Data ID = {}").format(idSiswa)
+    berkas.close()
+
+    sql = "UPDATE testdb SET jawaban = '%s' WHERE id = '%d' " % (list_jawaban, idSiswa)
+    # sql2 = "SELECT id FROM testdb WHERE namaSiswa = '%s'"%(namaSiswa)
+    try:
+        cursor.execute(sql)
+        db.commit()
+        print ('Data Jawaban : {} dengan ID = {} berhasil disimpan').format(list_jawaban, idSiswa)
+        print ('Data berhasil disimpan')
+
+    except:
+        db.rollback()
+        print('Oopss... Ada error nih')
+
+    db.close()
+
     print "Selesai"
     sys.exit()
