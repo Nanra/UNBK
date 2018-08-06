@@ -135,26 +135,26 @@ def cek_dict(noSoal):
 
 # Reading Section
 
-# bacaan_sapaan = open("Sapaan_Umum.txt", "r")
+bacaan_sapaan = open("SapaanUtama.txt", "r")
 bacaanSoal = open("Soal_Pengetahuan_Sosial_IPS.txt", "r")
 bacaanPilihan = open("Jawaban_Pengetahuan_Sosial_IPS.txt", "r")
-# parsing_sapaan = bacaan_sapaan.readlines()
+parsing_sapaan = bacaan_sapaan.readlines()
 parsingSoal = bacaanSoal.readlines()
 parsingPilihan = bacaanPilihan.readlines()
 bacaanSoal.close()
 bacaanPilihan.close()
 
-# for s in parsing_sapaan:
-#    kalimat_sapaan = ('"{}"'.format(s))
-#    isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
-#    perintah.call(isi_sapaan, shell=True)
+for s in parsing_sapaan:
+   kalimat_sapaan = ('"{}"'.format(s))
+   isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
+   perintah.call(isi_sapaan, shell=True)
 
 
 for soal in parsingSoal:
-    print (soal)
+    #print (soal)
     arraySoal.append(soal)
 for pilihan in parsingPilihan:
-    print (pilihan)
+    #print (pilihan)
     arrayPilihan.append(pilihan)
 
 while noSoal < len(parsingSoal):
