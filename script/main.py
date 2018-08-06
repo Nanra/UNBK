@@ -47,7 +47,6 @@ perintah.call(kalNomor, shell=True)
 # perintah.call(kalNomor2, shell=True)
 print ("Playing Isi Angka Section")
 perintah.call("python isiAngka.py", shell=True) # Opening Module isiAngka.py
-perintah.call("python isiAngka.py", shell=True)
 
 
 # Sesi Ujian
