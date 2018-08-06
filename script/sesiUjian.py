@@ -292,7 +292,7 @@ else:
     print ("Data ID = {}").format(idSiswa)
     berkas.close()
 
-    sql = "UPDATE testdb SET jawaban = '%s' WHERE id = '%d' " % (list_jawaban, idSiswa)
+    sql = "UPDATE testdb SET jawaban = '%s' WHERE id = '%d' " % (jawabanAkhir, idSiswa)
     # sql2 = "SELECT id FROM testdb WHERE namaSiswa = '%s'"%(namaSiswa)
     try:
         cursor.execute(sql)
