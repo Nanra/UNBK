@@ -250,7 +250,7 @@ while noSoal < len(parsingSoal):
     # noSoal += 1
 else:
     print ("Ujian Selesai")
-    cmd.call('google_speech -l id "Sesi Ujian telah selesai, Semua soal telah dibacakan. Terimakaih dan semoga sukses "', shell=True)
+    cmd.call('google_speech -l id "Sesi Ujian telah selesai, Semua soal telah dibacakan. Terimakasih dan semoga sukses "', shell=True)
     list_jawaban = list(jawaban.values())
     print (list_jawaban)
     jawabanAkhir = ''.join(list_jawaban)
