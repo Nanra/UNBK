@@ -176,14 +176,18 @@ while True:
         kalimat = '"Nomor Ujian Anda Adalah : "' + nomor
         suaraKalimat = suara + kalimat + '",,.. Apakah Nomor Tersebut sesuai ?"'
         cmd.call(suaraKalimat, shell=True)
-        cmd.call(validKonfirm, shell=True)
+        cmd.call('google_speech -l id "Tekan Tombol Validasi jika benar !"', shell=True)
+        cmd.call('google_speech -l id "Jikan belum benar, silahkan masukkan nomor kembali !"', shell=True)
+        # cmd.call(validKonfirm, shell=True)
         print ("Menunggu Konfirmasi")
         time.sleep(2)  # Witing for Input Konfirmasi
         tombolValidasi2 = str(GPIO.input(pinbtnValid))
         print tombolValidasi2
         if tombolValidasi2 is pressed:
             print "Y"
-            cmd.call(validPressed, shell=True)
+            cmd.call(suaraEnter, shell=True)
+            cmd.call('google_speech -l id "Anda menekan tombol validasi"', shell=True)
+            # cmd.call(validPressed, shell=True)
             break
         else:
             continue
