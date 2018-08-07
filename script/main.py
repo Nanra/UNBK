@@ -53,4 +53,7 @@ perintah.call("python isiAngka.py", shell=True) # Opening Module isiAngka.py
 # print ("Sesi Ujian")
 # perintah.call(kalUjian, shell=True)
 # perintah.call(kalUjian2, shell=True)
-# perintah.call("python sesiUjian.py", shell=True)
+print ("Playing Sesi Ujian")
+perintah.call("python sesiUjian.py", shell=True)
+
+print ("Selesai")

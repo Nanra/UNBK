@@ -1,5 +1,21 @@
-Selamat datang para peserta Ujian Nasional tahun 2018.
-Anda sedang mengikuti ujian nasional mata pelajaran Bahasa Indonesia.
-Pastikan anda mengisi data identitas anda dengan baik dan benar.
-Kemudian pilihlah jawaban yang paling tepat dari setiap pertanyaan yang ada.
-Jika ada pertanyaan, silahkan bertanya kepada pengawas ujian.
+Sekarang Anda memasuki sesi mengerjakan Soal.
+
+Dengarkan soal dengan baik dan seksama.
+
+Jika soal kurang jelas atau kurang dipahami, silahkan tekan tombol back satu kali.
+
+Masukkan jawaban A, B, C, dan D dengan menekan kombinasi Tombol atas kemudian lakukan validasi jawaban.
+
+Untuk menyimpan jawaban yang dipilih, silahkan tekan tombol enter !
+
+Jika Anda salah memasukkan jawaban, silahkan masukkan jawaban yang baru dan tekan tombol validasi kembali.
+
+Tekan tombol Next untuk lanjut ke soal berikutnya.
+
+Anda bisa melewati nomor soal dengan menekan tombol next 1 kali.
+
+Untuk kembali ke soal sebelumnya, silahkan tekan dan tahan tombol back selama 1 detik.
+
+Jika ada pertanyaan, silahkan bertanya kepada pengawas ujian !
+
+Sekarang silahkan simak pertanyaan dengan baik !

@@ -70,8 +70,8 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 
 # Play Greetings
-#for baca in sapaNomor:
-#    cmd.call(baca, shell=True)
+for baca in sapaNomor:
+    cmd.call(baca, shell=True)
 
 print "Test Pembacaan Angka\n"
 print "Masukkan Angka\n"

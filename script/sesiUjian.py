@@ -6,13 +6,13 @@ import subprocess as cmd
 import sys
 
 # Database connection
-#import MySQLdb
-#db = MySQLdb.connect(host="172.20.10.3",
-#                     user="root",
-#                     passwd="raspberry",
-#                     db="sisunbk")
-#cursor = db.cursor()
-#print ("Database OK..")
+import MySQLdb
+db = MySQLdb.connect(host="172.20.10.3",
+                     user="root",
+                     passwd="raspberry",
+                     db="sisunbk")
+cursor = db.cursor()
+print ("Database OK..")
 
 # Defenisi Mode GPIO
 GPIO.setmode(GPIO.BOARD)
@@ -135,26 +135,26 @@ def cek_dict(noSoal):
 
 # Reading Section
 
-# bacaan_sapaan = open("Sapaan_Umum.txt", "r")
+bacaan_sapaan = open("SapaanUtama.txt", "r")
 bacaanSoal = open("Soal_Pengetahuan_Sosial_IPS.txt", "r")
 bacaanPilihan = open("Jawaban_Pengetahuan_Sosial_IPS.txt", "r")
-# parsing_sapaan = bacaan_sapaan.readlines()
+parsing_sapaan = bacaan_sapaan.readlines()
 parsingSoal = bacaanSoal.readlines()
 parsingPilihan = bacaanPilihan.readlines()
 bacaanSoal.close()
 bacaanPilihan.close()
 
-# for s in parsing_sapaan:
-#    kalimat_sapaan = ('"{}"'.format(s))
-#    isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
-#    perintah.call(isi_sapaan, shell=True)
+for s in parsing_sapaan:
+   kalimat_sapaan = ('"{}"'.format(s))
+   isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
+   cmd.call(isi_sapaan, shell=True)
 
 
 for soal in parsingSoal:
-    print (soal)
+    #print (soal)
     arraySoal.append(soal)
 for pilihan in parsingPilihan:
-    print (pilihan)
+    #print (pilihan)
     arrayPilihan.append(pilihan)
 
 while noSoal < len(parsingSoal):
@@ -280,5 +280,31 @@ while noSoal < len(parsingSoal):
         time.sleep(0.3)
     # noSoal += 1
 else:
+    list_jawaban = list(jawaban.values())
+    print (list_jawaban)
+    jawabanAkhir = ''.join(list_jawaban)
+    print (jawabanAkhir)
+
+    # Menyimpan Data ID ke dalam berkas
+    berkas = open("dataID.txt", "r")
+    idSiswa = berkas.read()
+    idSiswa = int(idSiswa)
+    print ("Data ID = {}").format(idSiswa)
+    berkas.close()
+
+    sql = "UPDATE testdb SET jawaban = '%s' WHERE id = '%d' " % (jawabanAkhir, idSiswa)
+    # sql2 = "SELECT id FROM testdb WHERE namaSiswa = '%s'"%(namaSiswa)
+    try:
+        cursor.execute(sql)
+        db.commit()
+        print ('Data Jawaban : {} dengan ID = {} berhasil disimpan').format(list_jawaban, idSiswa)
+        print ('Data berhasil disimpan')
+
+    except:
+        db.rollback()
+        print('Oopss... Ada error nih')
+
+    db.close()
+
     print "Selesai"
     sys.exit()
