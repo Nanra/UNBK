@@ -217,7 +217,7 @@ while True:
         suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
         cmd.call(suaraKalimat, shell=True)
         cmd.call('google_speech -l id "Tekan Tombol Validasi jika benar !"', shell=True)
-        cmd.call('google_speech -l id "Jikan belum benar, silahkan masukkan kembali nama Anda !"', shell=True)
+        cmd.call('google_speech -l id "Jika belum benar, silahkan masukkan kembali nama Anda !"', shell=True)
         # cmd.call(validKonfirm, shell=True)
         print "Menunggu Konfirmasi ...."
         time.sleep(2)  # Witing for Input Konfirmasi

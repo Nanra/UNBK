@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="179" column="89" selection-start-line="179" selection-start-column="89" selection-end-line="179" selection-end-column="89" />
+              <caret line="179" column="56" selection-start-line="179" selection-start-column="56" selection-end-line="179" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -45,8 +45,8 @@
       <file leaf-file-name="isiNama.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/isiNama.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="219" column="8" lean-forward="true" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="110" />
+            <state relative-caret-position="307">
+              <caret line="218" column="71" selection-start-line="218" selection-start-column="71" selection-end-line="218" selection-end-column="71" />
               <folding>
                 <element signature="e#103#126#0" expanded="true" />
               </folding>
@@ -398,13 +398,6 @@
       <option name="presentableId" value="Default" />
       <updated>1508090822879</updated>
     </task>
-    <task id="LOCAL-00017" summary="Update Isi Nama">
-      <created>1530813076109</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1530813076110</updated>
-    </task>
     <task id="LOCAL-00018" summary="Update PEP8">
       <created>1530813099485</created>
       <option name="number" value="00018" />
@@ -741,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533566894040</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Update From Laptop">
+      <created>1533615826835</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1533615826837</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -810,7 +810,8 @@
     <MESSAGE value="Update PEP8" />
     <MESSAGE value="Update Petunjuk Angka" />
     <MESSAGE value="Update Sesi Ujian" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Sesi Ujian" />
+    <MESSAGE value="Update From Laptop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update From Laptop" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/script/Sapaan_Umum.txt">
@@ -1114,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/isiNama.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="219" column="8" lean-forward="true" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="110" />
+        <state relative-caret-position="307">
+          <caret line="218" column="71" selection-start-line="218" selection-start-column="71" selection-end-line="218" selection-end-column="71" />
           <folding>
             <element signature="e#103#126#0" expanded="true" />
           </folding>
@@ -1125,7 +1126,7 @@
     <entry file="file://$PROJECT_DIR$/script/isiAngka.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="179" column="89" selection-start-line="179" selection-start-column="89" selection-end-line="179" selection-end-column="89" />
+          <caret line="179" column="56" selection-start-line="179" selection-start-column="56" selection-end-line="179" selection-end-column="56" />
         </state>
       </provider>
     </entry>
