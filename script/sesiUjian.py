@@ -48,20 +48,8 @@ belum = "omxplayer -o local notif/belum.ogg"
 belumIsiNama = "omxplayer -o local Petunjuk/belumIsiNama.mp3"
 tandaStrip = 'google_speech -l id "Tanda Strip"'
 sesiMasukkanJawaban = 'google_speech -l id "Silahkan Masukkan Jawaban Anda !"'
-##sesiNama = "omxplayer -o local Petunjuk/sesiNama/sesiNama.mp3"
-##sesiNama2 = "omxplayer -o local Petunjuk/sesiNama/sesiNama2.mp3"
-##sesiNama3 = "omxplayer -o local Petunjuk/sesiNama/sesiNama3.mp3"
-##sesiNama4 = "omxplayer -o local Petunjuk/sesiNama/sesiNama4.mp3"
-##sesiNama5 = "omxplayer -o local Petunjuk/sesiNama/sesiNama5.mp3"
-##sesiNama6 = "omxplayer -o local Petunjuk/sesiNama/sesiNama6.mp3"
-##sesiNama7 = "omxplayer -o local Petunjuk/sesiNama/sesiNama7.mp3"
-##sesiNama8 = "omxplayer -o local Petunjuk/sesiNama/sesiNama8.mp3"
 validKonfirm = "omxplayer -o local Petunjuk/validKonfirm.mp3"
 validPressed = "omxplayer -o local Petunjuk/validPressed.mp3"
-##sapaNama = [sesiNama, sesiNama2,
-##            sesiNama3, sesiNama4,
-##            sesiNama5, sesiNama6,
-##            sesiNama7, sesiNama8]
 
 pinbtn = [pinbtnValid, pinbtnNext,
           pinbtnPrev, pinbtnDelete,
@@ -79,10 +67,6 @@ while i < len(pinbtn):
 print "All Pin OK\n"
 # print "Test Pembacaan Huruf\n"
 
-### Play Greetings
-##for baca in sapaNama:
-##    cmd.call(baca, shell=True)
-##print "Masukkan Huruf\n"
 
 
 # Fungsi Baca Kode Braille
@@ -144,6 +128,7 @@ parsingPilihan = bacaanPilihan.readlines()
 bacaanSoal.close()
 bacaanPilihan.close()
 
+# Membaca Petunjuk Ujian
 for s in parsing_sapaan:
    kalimat_sapaan = ('"{}"'.format(s))
    isi_sapaan = 'google_speech -l id ' + kalimat_sapaan + ' -e speed 1 '
@@ -210,9 +195,9 @@ while noSoal < len(parsingSoal):
         if tombolEnter is pressed:
             print "Jawaban telah disimpan ke antrian"
             jawaban[noSoal] = isivalid # Saving Answer With Specific Index
-            if noSoal in soalSkip : # Check Apakah soal pernah dilewat
-                soalSkip.remove(soalSkip[noSoal])
-                print ("Soal Skip : {}").format(soalSkip)
+            #if noSoal in soalSkip : # Check Apakah soal pernah dilewat
+            #    soalSkip.remove(soalSkip[noSoal])
+            #    print ("Soal Skip : {}").format(soalSkip)
             cmd.call(suaraEnter, shell=True)
             print "Jawaban = ", jawaban
             isivalid = ""
@@ -233,22 +218,6 @@ while noSoal < len(parsingSoal):
             noSoal += 1
             break
 
-            # print "Tombol Next Telah Ditekan"
-            # nama = ''.join(antrian)
-            # kalimat = '"Nama Anda Adalah : "' + nama
-            # suaraKalimat = suara + kalimat + '",,.. Apakah Nama Tersebut benar ?"'
-            # cmd.call(suaraKalimat, shell=True)
-            # cmd.call(validKonfirm, shell=True)
-            # print "Menunggu Konfirmasi ...."
-            # time.sleep(2)  # Witing for Input Konfirmasi
-            # tombolValidasi2 = str(GPIO.input(pinbtnValid))
-            # print tombolValidasi2
-            # if tombolValidasi2 is pressed:
-            #     print "Y"
-            #     cmd.call(validPressed, shell=True)
-            #     break
-            # else:
-            #     continue
 
         if tombolPrev is pressed:
             print "Tombol Previous Ditekan"
@@ -280,6 +249,8 @@ while noSoal < len(parsingSoal):
         time.sleep(0.3)
     # noSoal += 1
 else:
+    print ("Ujian Selesai")
+    cmd.call('google_speech -l id "Sesi Ujian telah selesai, Semua soal telah dibacakan. Terimakaih dan semoga sukses "', shell=True)
     list_jawaban = list(jawaban.values())
     print (list_jawaban)
     jawabanAkhir = ''.join(list_jawaban)
