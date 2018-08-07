@@ -1,14 +1,14 @@
 Sekarang Anda memasuki sesi mengerjakan Soal.
 Sebelum mengerjakan soal, mohon perhatikan langkah-langkah berikut ini!
 
-Dengarkan soal dengan baik dan seksama.
+..Pertama. Dengarkan soal dengan baik dan seksama.
 Jika soal kurang jelas atau kurang dipahami, silahkan tekan tombol bek satu kali.
-Masukkan jawaban A, B, C, dan D, dengan menekan kombinasi Tombol atas kemudian lakukan validasi jawaban.
-Untuk menyimpan jawaban yang dipilih, silahkan tekan tombol enter !
-Jika Anda salah memasukkan jawaban, silahkan masukkan jawaban yang baru dan tekan tombol validasi kembali.
-Tekan tombol Next untuk lanjut ke soal berikutnya.
-Anda bisa melewati nomor soal tanpa mengisi jawaban dengan menekan tombol next 1 kali.
-Untuk kembali ke soal sebelumnya, silahkan tekan dan tahan tombol bek selama 1 detik.
+..Kedua. Masukkan jawaban A, B, C, dan D dengan menekan kombinasi Tombol atas kemudian lakukan validasi jawaban.
+..Ketiga. Untuk menyimpan jawaban yang dipilih, silahkan tekan tombol enter !
+Jika Anda salah memasukkan jawaban, silahkan masukkan jawaban yang baru dan tekan tombol validasi.
+..Keempat. Tekan tombol Next untuk lanjut ke soal berikutnya.
+..Kelima. Anda bisa melewati nomor soal tanpa mengisi jawaban dengan menekan tombol next 1 kali.
+..Keenam. Untuk kembali ke soal sebelumnya, silahkan tekan dan tahan tombol bek selama 1 detik.
 Jika ada pertanyaan, silahkan bertanya kepada pengawas ujian !
 
 Sekarang silahkan simak pertanyaan dengan baik !
